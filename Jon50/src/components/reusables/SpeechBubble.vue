@@ -5,7 +5,14 @@ defineProps({
 </script>
 
 <template>
-  <div>{{ text }}</div>
+  <div class="o-speech-bubble">{{ text }}</div>
 </template>
 
-<style scoped></style>
+<style lang="css">
+.o-speech-bubble {
+  border-radius: calc(infinity * 1px);
+  background-color: blue;
+  width: 80vw;
+  font-size: 4vw;
+}
+</style>

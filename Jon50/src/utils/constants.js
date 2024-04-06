@@ -1,287 +1,250 @@
 export const LYRICS_LIST = [
   {
     content: 'אין שבת',
-    appear: 12,
-    startTime: 0,
-    durationMS: 0,
-    location: 1
+    timing: 12,
+    start: 0,
+    durationMS: 0
   },
   {
     content: 'בלי טיולים',
-    appear: 13,
-    startTime: null,
-    durationMS: 0,
-    location: 2
+    timing: 13,
+    start: null,
+    durationMS: 0
   },
   {
     content: 'ואי אפשר לישון',
-    appear: 15,
-    startTime: null,
-    durationMS: 0,
-    location: 1
+    timing: 15,
+    start: null,
+    durationMS: 0
   },
   {
     content: 'מוביל בדיוק לפי התכנית',
-    appear: 17,
-    startTime: null,
-    durationMS: 0,
-    location: 2
+    timing: 17,
+    start: null,
+    durationMS: 0
   },
   {
     content: 'תמיד צועד ראשון',
-    appear: 19,
-    startTime: null,
-    durationMS: 0,
-    location: 1
+    timing: 19,
+    start: null,
+    durationMS: 0
   },
   {
     content: 'הסברים על השבילים',
-    appear: 21,
-    startTime: null,
-    durationMS: 0,
-    location: 2
+    timing: 21,
+    start: null,
+    durationMS: 0
   },
   {
     content: 'כל סיפור הוא אמיתי',
-    appear: 23,
-    startTime: null,
-    durationMS: 0,
-    location: 1
+    timing: 23,
+    start: null,
+    durationMS: 0
   },
   {
     content: 'אני מרגיש פשוט טבעי',
-    appear: 26,
-    startTime: null,
-    durationMS: 0,
-    location: 2
+    timing: 26,
+    start: null,
+    durationMS: 0
   },
   {
     content: 'כאילו זה ביתי',
-    appear: 28,
-    startTime: null,
-    durationMS: 0,
-    location: 1
+    timing: 28,
+    start: null,
+    durationMS: 0
   },
   {
     content: 'יונתן אתה הבית',
-    startTime: null,
-    durationMS: 0,
-    location: 2
+    timing: 42,
+    start: null,
+    durationMS: 0
   },
   {
     content: 'אתה העוגן, אתה הלב',
-    startTime: null,
-    durationMS: 0,
-    location: 1
+    timing: 47,
+    start: null,
+    durationMS: 0
   },
   {
     content: 'השראה קטנה לכל ילד',
-    startTime: null,
-    durationMS: 0,
-    location: 2
+    timing: 51,
+    start: null,
+    durationMS: 0
   },
   {
     content: 'מהלב...',
-    startTime: null,
-    durationMS: 0,
-    location: 1
+    timing: 54,
+    start: null,
+    durationMS: 0
   },
   {
     content: 'יונתן, המשך לככב!',
-    startTime: null,
-    durationMS: 0,
-    location: 2
+    timing: 56,
+    start: null,
+    durationMS: 0
   },
+  // from here accurate
   {
     content: 'דן דן בא ומשתף',
-    startTime: null,
-    durationMS: 0,
-    location: 1
+    timing: 62,
+    start: 67.96,
+    durationMS: 0
   },
   {
     content: 'מה חווה בחוץ',
-    startTime: null,
-    durationMS: 0,
-    location: 2
+    timing: 70.28,
+    start: 71.12,
+    durationMS: 0
   },
   {
     content: 'והבנות מתלהבות',
-    startTime: null,
-    durationMS: 0,
-    location: 1
+    start: null,
+    durationMS: 0
   },
   {
     content: 'מהלילה בקיבוץ',
-    startTime: null,
-    durationMS: 0,
-    location: 2
+    start: null,
+    durationMS: 0
   },
   {
     content: 'גלית מראה לי את העיר',
-    startTime: null,
-    durationMS: 0,
-    location: 1
+    start: null,
+    durationMS: 0
   },
   {
     content: 'וקסם שגילתה',
-    startTime: null,
-    durationMS: 0,
-    location: 2
+    start: null,
+    durationMS: 0
   },
   {
     content: 'המשפחה שלי בראש',
-    startTime: null,
-    durationMS: 0,
-    location: 1
+    start: null,
+    durationMS: 0
   },
   {
     content: 'היא נפלאה ואין בילתה',
-    startTime: null,
-    durationMS: 0,
-    location: 2
+    start: null,
+    durationMS: 0
   },
   {
     content: 'יונתן אתה הבית',
-    startTime: null,
-    durationMS: 0,
-    location: 1
+    start: null,
+    durationMS: 0
   },
   {
     content: 'אתה העוגן, אתה הלב',
-    startTime: null,
-    durationMS: 0,
-    location: 2
+    start: null,
+    durationMS: 0
   },
   {
     content: 'השראה קטנה לכל ילד',
-    startTime: null,
-    durationMS: 0,
-    location: 1
+    start: null,
+    durationMS: 0
   },
   {
     content: 'מהלב...',
-    startTime: null,
-    durationMS: 0,
-    location: 2
+    start: null,
+    durationMS: 0
   },
   {
     content: 'יונתן, המשך לככב!',
-    startTime: null,
-    durationMS: 0,
-    location: 1
+    start: null,
+    durationMS: 0
   },
   {
     content: 'ביקרנו ביקב גדול',
-    startTime: null,
-    durationMS: 0,
-    location: 1
+    start: null,
+    durationMS: 0
   },
   {
     content: 'לטעום אתם יודעים',
-    startTime: null,
-    durationMS: 0,
-    location: 2
+    start: null,
+    durationMS: 0
   },
   {
     content: 'ומבלים שם חברים',
-    startTime: null,
-    durationMS: 0,
-    location: 1
+    start: null,
+    durationMS: 0
   },
   {
     content: 'מכל מיני מעגלים',
-    startTime: null,
-    durationMS: 0,
-    location: 2
+    start: null,
+    durationMS: 0
   },
   {
     content: 'המפגש המשפחתי קרב',
-    startTime: null,
-    durationMS: 0,
-    location: 1
+    start: null,
+    durationMS: 0
   },
   {
     content: 'יהיה מלא אור ועליז',
-    startTime: null,
-    durationMS: 0,
-    location: 2
+    start: null,
+    durationMS: 0
   },
   {
     content: 'אולי נטוס לאנגליה',
-    startTime: null,
-    durationMS: 0,
-    location: 1
+    start: null,
+    durationMS: 0
   },
   {
     content: 'לביקור זריז',
-    startTime: null,
-    durationMS: 0,
-    location: 2
+    start: null,
+    durationMS: 0
   },
   {
     content: 'יונתן אתה הבית',
-    startTime: null,
+    start: null,
     durationMS: 0,
     location: 1
   },
   {
     content: 'אתה העוגן, אתה הלב',
-    startTime: null,
-    durationMS: 0,
-    location: 2
+    start: null,
+    durationMS: 0
   },
   {
     content: 'השראה קטנה לכל ילד',
-    startTime: null,
-    durationMS: 0,
-    location: 1
+    start: null,
+    durationMS: 0
   },
   {
     content: 'עם תרמיל או עם מקל',
-    startTime: null,
-    durationMS: 0,
-    location: 2
+    start: null,
+    durationMS: 0
   },
   {
     content: 'מופת לארץ ישראל',
-    startTime: null,
-    durationMS: 0,
-    location: 1
+    start: null,
+    durationMS: 0
   },
   {
     content: 'מופת לארץ ישראל',
-    startTime: null,
-    durationMS: 0,
-    location: 2
+    start: null,
+    durationMS: 0
   },
   {
     content: 'יונתן אתה הבית',
-    startTime: null,
-    durationMS: 0,
-    location: 1
+    start: null,
+    durationMS: 0
   },
   {
     content: 'יונתן אתה הבית',
-    startTime: null,
-    durationMS: 0,
-    location: 2
+    start: null,
+    durationMS: 0
   },
   {
     content: 'יונתן אתה הבית',
-    startTime: null,
-    durationMS: 0,
-    location: 1
+    start: null,
+    durationMS: 0
   },
   {
     content: 'אתה',
-    startTime: null,
-    durationMS: 0,
-    location: 2
+    start: null,
+    durationMS: 0
   },
   {
     content: 'יונתן אתה הבית',
-    startTime: null,
-    durationMS: 0,
-    location: 1
+    start: null,
+    durationMS: 0
   }
 ]
