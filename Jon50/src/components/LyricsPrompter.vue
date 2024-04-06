@@ -1,5 +1,5 @@
 <script setup>
-import { ref, onBeforeUnmount } from 'vue'
+import { ref, onMounted, onBeforeUnmount } from 'vue'
 import { LYRICS_LIST } from '../utils/constants'
 import SpeechBubble from './reusables/SpeechBubble.vue'
 
@@ -28,13 +28,13 @@ const generateNextContent = () => {
   }
   interval = setTimeout(() => {
     content.value = lyricsByTiming[times[timeIndex]]
-    if (timeIndex <= times.length) {
+    if (timeIndex < times.length) {
       timeIndex++
       interval = generateNextContent()
     }
   }, timeout * 1000)
 }
-generateNextContent()
+onMounted(generateNextContent)
 
 onBeforeUnmount(() => {
   clearInterval(interval)
