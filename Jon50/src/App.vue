@@ -10,7 +10,7 @@ import { RouterLink, RouterView } from 'vue-router'
         <img class="icon" src="./assets/icons/home.svg" alt="Go home" />
       </RouterLink>
     </nav>
-    <h1>Jonathan 50th!</h1>
+    <h1>Jonathan 50th</h1>
   </header>
 
   <RouterView />
