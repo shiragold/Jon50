@@ -17,6 +17,7 @@ onMounted(() => {
   <audio>
     <source src="../assets/media/instrumental.mp3" type="audio/mpeg" />
   </audio>
+  <RouterView />
 </template>
 
 <style></style>

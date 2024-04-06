@@ -6,13 +6,11 @@
   <h3>Wishing all the best, to another exciting decade!</h3>
   <div class="play-container">
     <RouterLink to="/content">
-      <!-- <object data="@assets/home.svg" width="18" height="18" /> -->
-      <img class="icon" src="../assets/icons/play.svg" alt="Go to content" />
+      <img class="icon" src="../assets/icons/music.svg" alt="Play music only" />
     </RouterLink>
-    <!-- <RouterLink to="/content/vocals">
-      <object data="@assets/home.svg" width="18" height="18" />
-      <img class="icon" src="./assets/icons/play.svg" alt="Go to content" />
-    </RouterLink> -->
+    <RouterLink to="/content/acapella">
+      <img class="icon" src="../assets/icons/mic.svg" alt="Play with singer" />
+    </RouterLink>
   </div>
 </template>
 

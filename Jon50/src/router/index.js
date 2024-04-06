@@ -12,7 +12,13 @@ const router = createRouter({
     {
       path: '/content',
       name: 'content',
-      component: () => import('../views/ContentView.vue')
+      component: () => import('../views/ContentView.vue'),
+      children: [
+        {
+          path: 'acapella',
+          component: () => import('../components/AcapellaPlayer.vue')
+        }
+      ]
     }
   ]
 })
