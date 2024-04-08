@@ -4,7 +4,7 @@
   <h1>Sing-a-long</h1>
   <h3>We're thrilled to celebrate with you...</h3>
   <h3>Wishing all the best, to another exciting decade!</h3>
-  <div class="play-container">
+  <div class="content-redirect-container">
     <RouterLink to="/content">
       <img class="icon" src="../assets/icons/music.svg" alt="Play music only" />
     </RouterLink>
@@ -15,7 +15,7 @@
 </template>
 
 <style>
-.play-container {
+.content-redirect-container {
   .icon {
     height: 128px;
   }
