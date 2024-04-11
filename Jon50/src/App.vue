@@ -1,24 +1,19 @@
 <script setup>
-import { RouterLink, RouterView } from 'vue-router'
-import { storeToRefs } from 'pinia'
-import { userContentStore } from './stores/content'
+import { computed } from 'vue'
+import { RouterLink, RouterView, useRoute } from 'vue-router'
 
-const store = userContentStore()
-const { isPaused } = storeToRefs(store)
-const { togglePaused } = store
+const route = useRoute()
+const onContent = computed(() => route.name === 'content')
 </script>
 
 <template>
   <header class="header">
-    <nav>
-      <RouterLink to="/">
-        <img class="icon" src="./assets/icons/home.svg" alt="Go home" />
+    <nav class="header-nav">
+      <RouterLink v-if="onContent" to="/">
+        <img class="icon small" src="@icons/home.svg" alt="Go home" />
       </RouterLink>
     </nav>
-    <h1>Jonathan 50th</h1>
-    <button v-if="isPaused" @click="togglePaused">
-      <img class="icon" src="./assets/icons/restart.svg" alt="Go home" />
-    </button>
+    <h3 class="header-title">Jonathan 50th</h3>
   </header>
 
   <RouterView />
@@ -26,8 +21,19 @@ const { togglePaused } = store
 
 <style>
 .header {
-  .icon {
-    height: 18px;
+  height: 2rem;
+  display: grid;
+  grid-template-columns: 2rem auto;
+  align-items: center;
+  place-items: center;
+
+  .header-title {
+    place-self: start;
+    align-self: center;
+  }
+
+  .header-nav {
+    height: 1.25rem;
   }
 }
 </style>

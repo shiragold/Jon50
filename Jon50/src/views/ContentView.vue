@@ -1,23 +1,23 @@
 <script setup>
-import { onMounted } from 'vue'
-import LyricsPropter from '../components/LyricsPrompter.vue'
+import { useContentStore } from '@/stores/content'
+import Content from '../components/content/Content.vue'
 
-onMounted(() => {
-  for (const audio of document.getElementsByTagName('audio')) {
-    audio.play()
-  }
-})
+const store = useContentStore()
 </script>
 
 <template>
-  <div class="o-content">
-    <div class="image" />
-    <LyricsPropter />
+  <Content v-if="store.isPlaying" />
+  <div v-else class="play-container">
+    <button @click="store.togglePlay()">
+      <img class="icon large" src="@icons/play.svg" alt="Start playing" />
+    </button>
   </div>
-  <audio>
-    <source src="../assets/media/instrumental.mp3" type="audio/mpeg" />
-  </audio>
-  <RouterView />
 </template>
 
-<style></style>
+<style>
+.play-container {
+  height: 100%;
+  display: grid;
+  place-content: center;
+}
+</style>

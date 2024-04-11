@@ -16,7 +16,7 @@ const router = createRouter({
       children: [
         {
           path: 'acapella',
-          component: () => import('../components/AcapellaPlayer.vue')
+          component: () => import('../components/content/AcapellaPlayer.vue')
         }
       ]
     }

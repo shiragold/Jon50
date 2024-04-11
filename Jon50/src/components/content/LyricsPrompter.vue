@@ -1,7 +1,7 @@
 <script setup>
 import { ref, onMounted, onBeforeUnmount } from 'vue'
-import { LYRICS_LIST } from '../utils/constants'
-import SpeechBubble from './reusables/SpeechBubble.vue'
+import { LYRICS_LIST } from '../../utils/constants'
+import SpeechBubble from '../reusables/SpeechBubble.vue'
 
 const lyricsByTiming = LYRICS_LIST.reduce(
   (acc, { timing, content }) =>
