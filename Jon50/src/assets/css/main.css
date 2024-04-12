@@ -26,7 +26,11 @@
   }
 
   &.large {
-    height: 16rem;
-    width: 16rem;
+    height: 12rem;
   }
+}
+
+.button {
+  padding: 0.5rem 1.5rem;
+  cursor: pointer;
 }
