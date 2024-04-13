@@ -12,16 +12,14 @@ defineProps({
 </script>
 
 <template>
-  <div class="o-speech-bubble"><slot /></div>
+  <div class="speech-bubble"><slot /></div>
 </template>
 
 <style lang="css">
-.o-speech-bubble {
-  display: grid;
-  place-content: center;
+.speech-bubble {
   border-radius: calc(infinity * 1px);
   border: 1px solid black;
-  width: 80vw;
-  font-size: 4vw;
+  font-size: 4rem;
+  padding: 1rem 2rem;
 }
 </style>

@@ -1,249 +1,255 @@
 export const LYRICS_LIST = [
   {
-    content: 'אין שבת',
+    text: 'אין שבת',
     timing: 12,
     start: 0,
     durationMS: 0
   },
   {
-    content: 'בלי טיולים',
+    text: 'בלי טיולים',
     timing: 13,
     start: null,
     durationMS: 0
   },
   {
-    content: 'ואי אפשר לישון',
+    text: 'ואי אפשר לישון',
     timing: 15,
     start: null,
     durationMS: 0
   },
   {
-    content: 'מוביל בדיוק לפי התכנית',
+    text: 'מוביל בדיוק לפי התכנית',
     timing: 17,
     start: null,
     durationMS: 0
   },
   {
-    content: 'תמיד צועד ראשון',
+    text: 'תמיד צועד ראשון',
     timing: 19,
     start: null,
     durationMS: 0
   },
   {
-    content: 'הסברים על השבילים',
+    text: 'הסברים על השבילים',
     timing: 21,
     start: null,
     durationMS: 0
   },
   {
-    content: 'כל סיפור הוא אמיתי',
+    text: 'כל סיפור הוא אמיתי',
     timing: 23,
     start: null,
     durationMS: 0
   },
   {
-    content: 'אני מרגיש פשוט טבעי',
+    text: 'אני מרגיש פשוט טבעי',
     timing: 26,
     start: null,
-    durationMS: 0
+    durationMS: 0,
+    image: 'tivee'
   },
   {
-    content: 'כאילו זה ביתי',
+    text: 'כאילו זה ביתי',
     timing: 28,
     start: null,
-    durationMS: 0
+    durationMS: 0,
+    image: 'tivee'
   },
   {
-    content: 'יונתן אתה הבית',
+    text: 'יונתן אתה הבית',
     timing: 42,
     start: null,
     durationMS: 0
   },
   {
-    content: 'אתה העוגן, אתה הלב',
+    text: 'אתה העוגן, אתה הלב',
     timing: 47,
     start: null,
     durationMS: 0
   },
   {
-    content: 'השראה קטנה לכל ילד',
+    text: 'השראה קטנה לכל ילד',
     timing: 51,
     start: null,
-    durationMS: 0
+    durationMS: 0,
+    image: 'hashraa1'
   },
   {
-    content: 'מהלב...',
+    text: 'מהלב...',
     timing: 54,
     start: null,
-    durationMS: 0
+    durationMS: 0,
+    image: 'hashraa1'
   },
   {
-    content: 'יונתן, המשך לככב!',
+    text: 'יונתן, המשך לככב!',
     timing: 56,
     start: null,
     durationMS: 0
   },
   // from here accurate
   {
-    content: 'דן דן בא ומשתף',
+    text: 'דן דן בא ומשתף',
     timing: 62,
     start: 67.96,
     durationMS: 0
   },
   {
-    content: 'מה חווה בחוץ',
+    text: 'מה חווה בחוץ',
     timing: 70.28,
     start: 71.12,
     durationMS: 0
   },
   {
-    content: 'והבנות מתלהבות',
+    text: 'והבנות מתלהבות',
     start: null,
     durationMS: 0
   },
   {
-    content: 'מהלילה בקיבוץ',
+    text: 'מהלילה בקיבוץ',
     start: null,
     durationMS: 0
   },
   {
-    content: 'גלית מראה לי את העיר',
+    text: 'גלית מראה לי את העיר',
     start: null,
     durationMS: 0
   },
   {
-    content: 'וקסם שגילתה',
+    text: 'וקסם שגילתה',
     start: null,
     durationMS: 0
   },
   {
-    content: 'המשפחה שלי בראש',
+    text: 'המשפחה שלי בראש',
     start: null,
     durationMS: 0
   },
   {
-    content: 'היא נפלאה ואין בילתה',
+    text: 'היא נפלאה ואין בילתה',
     start: null,
     durationMS: 0
   },
   {
-    content: 'יונתן אתה הבית',
+    text: 'יונתן אתה הבית',
     start: null,
     durationMS: 0
   },
   {
-    content: 'אתה העוגן, אתה הלב',
+    text: 'אתה העוגן, אתה הלב',
     start: null,
     durationMS: 0
   },
   {
-    content: 'השראה קטנה לכל ילד',
+    text: 'השראה קטנה לכל ילד',
     start: null,
     durationMS: 0
   },
   {
-    content: 'מהלב...',
+    text: 'מהלב...',
     start: null,
     durationMS: 0
   },
   {
-    content: 'יונתן, המשך לככב!',
+    text: 'יונתן, המשך לככב!',
     start: null,
     durationMS: 0
   },
   {
-    content: 'ביקרנו ביקב גדול',
+    text: 'ביקרנו ביקב גדול',
     start: null,
     durationMS: 0
   },
   {
-    content: 'לטעום אתם יודעים',
+    text: 'לטעום אתם יודעים',
     start: null,
     durationMS: 0
   },
   {
-    content: 'ומבלים שם חברים',
+    text: 'ומבלים שם חברים',
     start: null,
     durationMS: 0
   },
   {
-    content: 'מכל מיני מעגלים',
+    text: 'מכל מיני מעגלים',
     start: null,
     durationMS: 0
   },
   {
-    content: 'המפגש המשפחתי קרב',
+    text: 'המפגש המשפחתי קרב',
     start: null,
     durationMS: 0
   },
   {
-    content: 'יהיה מלא אור ועליז',
+    text: 'יהיה מלא אור ועליז',
     start: null,
     durationMS: 0
   },
   {
-    content: 'אולי נטוס לאנגליה',
+    text: 'אולי נטוס לאנגליה',
     start: null,
-    durationMS: 0
+    durationMS: 0,
+    image: 'london1'
   },
   {
-    content: 'לביקור זריז',
+    text: 'לביקור זריז',
     start: null,
-    durationMS: 0
+    durationMS: 0,
+    image: 'london2'
   },
   {
-    content: 'יונתן אתה הבית',
+    text: 'יונתן אתה הבית',
     start: null,
     durationMS: 0,
     location: 1
   },
   {
-    content: 'אתה העוגן, אתה הלב',
+    text: 'אתה העוגן, אתה הלב',
     start: null,
     durationMS: 0
   },
   {
-    content: 'השראה קטנה לכל ילד',
+    text: 'השראה קטנה לכל ילד',
     start: null,
     durationMS: 0
   },
   {
-    content: 'עם תרמיל או עם מקל',
+    text: 'עם תרמיל או עם מקל',
     start: null,
     durationMS: 0
   },
   {
-    content: 'מופת לארץ ישראל',
+    text: 'מופת לארץ ישראל',
     start: null,
     durationMS: 0
   },
   {
-    content: 'מופת לארץ ישראל',
+    text: 'מופת לארץ ישראל',
     start: null,
     durationMS: 0
   },
   {
-    content: 'יונתן אתה הבית',
+    text: 'יונתן אתה הבית',
     start: null,
     durationMS: 0
   },
   {
-    content: 'יונתן אתה הבית',
+    text: 'יונתן אתה הבית',
     start: null,
     durationMS: 0
   },
   {
-    content: 'יונתן אתה הבית',
+    text: 'יונתן אתה הבית',
     start: null,
     durationMS: 0
   },
   {
-    content: 'אתה',
+    text: 'אתה',
     start: null,
     durationMS: 0
   },
   {
-    content: 'יונתן אתה הבית',
+    text: 'יונתן אתה הבית',
     start: null,
     durationMS: 0
   }

@@ -7,16 +7,16 @@ const store = useContentStore()
 
 <template>
   <Content v-if="store.isPlaying" />
-  <div v-else class="play-container">
-    <button @click="store.togglePlay()">
+  <div v-else class="content-view">
+    <button class="button" @click="store.togglePlay()">
       <img class="icon large" src="@icons/play.svg" alt="Start playing" />
     </button>
   </div>
 </template>
 
 <style>
-.play-container {
-  height: 100%;
+.content-view {
+  height: calc(100vh - 2rem);
   display: grid;
   place-content: center;
 }

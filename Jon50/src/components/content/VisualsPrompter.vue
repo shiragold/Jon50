@@ -4,11 +4,11 @@ import { LYRICS_LIST } from '../../utils/constants'
 import SpeechBubble from '../reusables/SpeechBubble.vue'
 
 const lyricsByTiming = LYRICS_LIST.reduce(
-  (acc, { timing, content }) =>
+  (acc, { timing, text, image }) =>
     timing
       ? {
           ...acc,
-          [timing]: content
+          [timing]: { text, image }
         }
       : acc,
   {}
@@ -18,7 +18,7 @@ const times = Object.keys(lyricsByTiming)
   .sort()
 
 let timeIndex = 0
-let content = ref('')
+let content = ref(null)
 let interval = null
 
 const generateNextContent = () => {
@@ -43,7 +43,16 @@ onBeforeUnmount(() => {
 </script>
 
 <template>
-  <SpeechBubble v-if="content">{{ content }}</SpeechBubble>
+  <div>
+    <img v-if="content" :src="`@images/${content.image ?? 'tivee'}.JPG`" />
+  </div>
+  <div class="content-lyrics">
+    <SpeechBubble v-if="content">{{ content.text }}</SpeechBubble>
+  </div>
 </template>
 
-<style></style>
+<style>
+.content-lyrics {
+  align-self: start;
+}
+</style>

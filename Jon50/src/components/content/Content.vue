@@ -1,6 +1,6 @@
 <script setup>
 import { onMounted } from 'vue'
-import LyricsPropter from './LyricsPrompter.vue'
+import LyricsPrompter from './VisualsPrompter.vue'
 
 onMounted(() => {
   for (const audio of document.getElementsByTagName('audio')) {
@@ -11,8 +11,7 @@ onMounted(() => {
 
 <template>
   <div class="content">
-    <div class="image" />
-    <LyricsPropter />
+    <LyricsPrompter />
   </div>
   <audio>
     <source src="@media/instrumental.mp3" type="audio/mpeg" />
@@ -20,4 +19,14 @@ onMounted(() => {
   <RouterView />
 </template>
 
-<style></style>
+<style>
+.content {
+  height: calc(100vh - 2rem);
+  width: 100vw;
+  display: grid;
+  grid-template-rows: 2fr 1fr;
+  place-content: center;
+  place-items: center;
+  direction: rtl;
+}
+</style>
