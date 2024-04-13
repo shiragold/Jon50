@@ -44,7 +44,7 @@ onBeforeUnmount(() => {
 
 <template>
   <div>
-    <img v-if="content" :src="`@images/${content.image ?? 'tivee'}.JPG`" />
+    <img v-if="content?.image" class="image" :src="content.image" />
   </div>
   <div class="content-lyrics">
     <SpeechBubble v-if="content">{{ content.text }}</SpeechBubble>

@@ -1,27 +1,33 @@
+import tivee from '@images/tivee.jpg'
+
 export const LYRICS_LIST = [
   {
     text: 'אין שבת',
     timing: 12,
     start: 0,
-    durationMS: 0
+    durationMS: 0,
+    image: tivee
   },
   {
     text: 'בלי טיולים',
     timing: 13,
     start: null,
-    durationMS: 0
+    durationMS: 0,
+    image: tivee
   },
   {
     text: 'ואי אפשר לישון',
     timing: 15,
     start: null,
-    durationMS: 0
+    durationMS: 0,
+    image: tivee
   },
   {
     text: 'מוביל בדיוק לפי התכנית',
     timing: 17,
     start: null,
-    durationMS: 0
+    durationMS: 0,
+    image: tivee
   },
   {
     text: 'תמיד צועד ראשון',
