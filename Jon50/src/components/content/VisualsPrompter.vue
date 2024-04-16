@@ -4,18 +4,18 @@ import { LYRICS_LIST } from '../../utils/constants'
 import SpeechBubble from '../reusables/SpeechBubble.vue'
 
 const lyricsByTiming = LYRICS_LIST.reduce(
-  (acc, { timing, text, image }) =>
+  (acc, { timing, ...content }) =>
     timing
       ? {
           ...acc,
-          [timing]: { text, image }
+          [timing]: content
         }
       : acc,
   {}
 )
 const times = Object.keys(lyricsByTiming)
   .map((time) => Number(time))
-  .sort()
+  .sort((time1, time2) => time1 - time2)
 
 let timeIndex = 0
 let content = ref(null)
@@ -27,7 +27,7 @@ const generateNextContent = () => {
     timeout -= times[timeIndex - 1]
   }
   interval = setTimeout(() => {
-    content.value = lyricsByTiming[times[timeIndex]]
+    content.value = { ...content.value, ...lyricsByTiming[times[timeIndex]] }
     if (timeIndex < times.length) {
       timeIndex++
       interval = generateNextContent()

@@ -1,33 +1,36 @@
 import tivee from '@images/tivee.jpg'
+import hashraa1 from '@images/hashraa1.jpg'
+import bilta from '@images/bilta.jpg'
+import hashraa2 from '@images/hashraa2.jpg'
+import london1 from '@images/london1.jpg'
+import london2 from '@images/london2.jpg'
+import maagalim from '@images/maagalim.jpg'
 
 export const LYRICS_LIST = [
   {
     text: 'אין שבת',
-    timing: 12,
-    start: 0,
-    durationMS: 0,
+    timing: 7.8,
+    start: 12.24,
+    duration: 1.6,
     image: tivee
   },
   {
     text: 'בלי טיולים',
-    timing: 13,
-    start: null,
-    durationMS: 0,
-    image: tivee
+    timing: 13.84,
+    start: 13.92,
+    duration: 1.6
   },
   {
     text: 'ואי אפשר לישון',
-    timing: 15,
-    start: null,
-    durationMS: 0,
-    image: tivee
+    timing: 15.52,
+    start: 15.96,
+    duration: 1.84
   },
   {
     text: 'מוביל בדיוק לפי התכנית',
-    timing: 17,
+    timing: 17.8,
     start: null,
-    durationMS: 0,
-    image: tivee
+    durationMS: 0
   },
   {
     text: 'תמיד צועד ראשון',
@@ -51,15 +54,13 @@ export const LYRICS_LIST = [
     text: 'אני מרגיש פשוט טבעי',
     timing: 26,
     start: null,
-    durationMS: 0,
-    image: 'tivee'
+    durationMS: 0
   },
   {
     text: 'כאילו זה ביתי',
     timing: 28,
     start: null,
-    durationMS: 0,
-    image: 'tivee'
+    durationMS: 0
   },
   {
     text: 'יונתן אתה הבית',
@@ -78,14 +79,13 @@ export const LYRICS_LIST = [
     timing: 51,
     start: null,
     durationMS: 0,
-    image: 'hashraa1'
+    image: hashraa1
   },
   {
     text: 'מהלב...',
     timing: 54,
     start: null,
-    durationMS: 0,
-    image: 'hashraa1'
+    durationMS: 0
   },
   {
     text: 'יונתן, המשך לככב!',
@@ -134,7 +134,8 @@ export const LYRICS_LIST = [
   {
     text: 'היא נפלאה ואין בילתה',
     start: null,
-    durationMS: 0
+    durationMS: 0,
+    image: bilta
   },
   {
     text: 'יונתן אתה הבית',
@@ -149,7 +150,8 @@ export const LYRICS_LIST = [
   {
     text: 'השראה קטנה לכל ילד',
     start: null,
-    durationMS: 0
+    durationMS: 0,
+    image: hashraa2
   },
   {
     text: 'מהלב...',
@@ -179,7 +181,8 @@ export const LYRICS_LIST = [
   {
     text: 'מכל מיני מעגלים',
     start: null,
-    durationMS: 0
+    durationMS: 0,
+    image: maagalim
   },
   {
     text: 'המפגש המשפחתי קרב',
@@ -195,19 +198,18 @@ export const LYRICS_LIST = [
     text: 'אולי נטוס לאנגליה',
     start: null,
     durationMS: 0,
-    image: 'london1'
+    image: london1
   },
   {
     text: 'לביקור זריז',
     start: null,
     durationMS: 0,
-    image: 'london2'
+    image: london2
   },
   {
     text: 'יונתן אתה הבית',
     start: null,
-    durationMS: 0,
-    location: 1
+    durationMS: 0
   },
   {
     text: 'אתה העוגן, אתה הלב',
