@@ -29,236 +29,236 @@ export const LYRICS_LIST = [
   {
     text: 'מוביל בדיוק לפי התכנית',
     timing: 17.8,
-    start: null,
-    durationMS: 0
+    start: 19.4,
+    duration: 2.76
   },
   {
     text: 'תמיד צועד ראשון',
-    timing: 19,
-    start: null,
-    durationMS: 0
+    timing: 22.16,
+    start: 22.76,
+    duration: 2.2
   },
   {
     text: 'הסברים על השבילים',
-    timing: 21,
-    start: null,
-    durationMS: 0
+    timing: 24.96,
+    start: 26.2,
+    duration: 1.92
   },
   {
     text: 'כל סיפור הוא אמיתי',
-    timing: 23,
-    start: null,
-    durationMS: 0
+    timing: 28.12,
+    start: 28.2,
+    duration: 2.68
   },
   {
     text: 'אני מרגיש פשוט טבעי',
-    timing: 26,
-    start: null,
-    durationMS: 0
+    timing: 30.88,
+    start: 32.84,
+    duration: 2.08
   },
   {
     text: 'כאילו זה ביתי',
-    timing: 28,
-    start: null,
-    durationMS: 0
+    timing: 34.92,
+    start: 34.96,
+    duration: 3.84
   },
   {
     text: 'יונתן אתה הבית',
-    timing: 42,
-    start: null,
-    durationMS: 0
+    timing: 38.8,
+    start: 42.16,
+    duration: 0
   },
   {
     text: 'אתה העוגן, אתה הלב',
     timing: 47,
     start: null,
-    durationMS: 0
+    duration: 0
   },
   {
     text: 'השראה קטנה לכל ילד',
     timing: 51,
     start: null,
-    durationMS: 0,
+    duration: 0,
     image: hashraa1
   },
   {
     text: 'מהלב...',
     timing: 54,
     start: null,
-    durationMS: 0
+    duration: 0
   },
   {
     text: 'יונתן, המשך לככב!',
     timing: 56,
     start: null,
-    durationMS: 0
+    duration: 0
   },
   // from here accurate
   {
     text: 'דן דן בא ומשתף',
     timing: 62,
     start: 67.96,
-    durationMS: 0
+    duration: 0
   },
   {
     text: 'מה חווה בחוץ',
     timing: 70.28,
     start: 71.12,
-    durationMS: 0
+    duration: 0
   },
   {
     text: 'והבנות מתלהבות',
     start: null,
-    durationMS: 0
+    duration: 0
   },
   {
     text: 'מהלילה בקיבוץ',
     start: null,
-    durationMS: 0
+    duration: 0
   },
   {
     text: 'גלית מראה לי את העיר',
     start: null,
-    durationMS: 0
+    duration: 0
   },
   {
     text: 'וקסם שגילתה',
     start: null,
-    durationMS: 0
+    duration: 0
   },
   {
     text: 'המשפחה שלי בראש',
     start: null,
-    durationMS: 0
+    duration: 0
   },
   {
     text: 'היא נפלאה ואין בילתה',
     start: null,
-    durationMS: 0,
+    duration: 0,
     image: bilta
   },
   {
     text: 'יונתן אתה הבית',
     start: null,
-    durationMS: 0
+    duration: 0
   },
   {
     text: 'אתה העוגן, אתה הלב',
     start: null,
-    durationMS: 0
+    duration: 0
   },
   {
     text: 'השראה קטנה לכל ילד',
     start: null,
-    durationMS: 0,
+    duration: 0,
     image: hashraa2
   },
   {
     text: 'מהלב...',
     start: null,
-    durationMS: 0
+    duration: 0
   },
   {
     text: 'יונתן, המשך לככב!',
     start: null,
-    durationMS: 0
+    duration: 0
   },
   {
     text: 'ביקרנו ביקב גדול',
     start: null,
-    durationMS: 0
+    duration: 0
   },
   {
     text: 'לטעום אתם יודעים',
     start: null,
-    durationMS: 0
+    duration: 0
   },
   {
     text: 'ומבלים שם חברים',
     start: null,
-    durationMS: 0
+    duration: 0
   },
   {
     text: 'מכל מיני מעגלים',
     start: null,
-    durationMS: 0,
+    duration: 0,
     image: maagalim
   },
   {
     text: 'המפגש המשפחתי קרב',
     start: null,
-    durationMS: 0
+    duration: 0
   },
   {
     text: 'יהיה מלא אור ועליז',
     start: null,
-    durationMS: 0
+    duration: 0
   },
   {
     text: 'אולי נטוס לאנגליה',
     start: null,
-    durationMS: 0,
+    duration: 0,
     image: london1
   },
   {
     text: 'לביקור זריז',
     start: null,
-    durationMS: 0,
+    duration: 0,
     image: london2
   },
   {
     text: 'יונתן אתה הבית',
     start: null,
-    durationMS: 0
+    duration: 0
   },
   {
     text: 'אתה העוגן, אתה הלב',
     start: null,
-    durationMS: 0
+    duration: 0
   },
   {
     text: 'השראה קטנה לכל ילד',
     start: null,
-    durationMS: 0
+    duration: 0
   },
   {
     text: 'עם תרמיל או עם מקל',
     start: null,
-    durationMS: 0
+    duration: 0
   },
   {
     text: 'מופת לארץ ישראל',
     start: null,
-    durationMS: 0
+    duration: 0
   },
   {
     text: 'מופת לארץ ישראל',
     start: null,
-    durationMS: 0
+    duration: 0
   },
   {
     text: 'יונתן אתה הבית',
     start: null,
-    durationMS: 0
+    duration: 0
   },
   {
     text: 'יונתן אתה הבית',
     start: null,
-    durationMS: 0
+    duration: 0
   },
   {
     text: 'יונתן אתה הבית',
     start: null,
-    durationMS: 0
+    duration: 0
   },
   {
     text: 'אתה',
     start: null,
-    durationMS: 0
+    duration: 0
   },
   {
     text: 'יונתן אתה הבית',
     start: null,
-    durationMS: 0
+    duration: 0
   }
 ]
