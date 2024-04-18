@@ -66,79 +66,85 @@ export const LYRICS_LIST = [
     text: 'יונתן אתה הבית',
     timing: 38.8,
     start: 42.16,
-    duration: 0
+    duration: 3.02
   },
   {
     text: 'אתה העוגן, אתה הלב',
-    timing: 47,
-    start: null,
-    duration: 0
+    timing: 45.12,
+    start: 47.4,
+    duration: 2.84
   },
   {
     text: 'השראה קטנה לכל ילד',
-    timing: 51,
-    start: null,
-    duration: 0,
+    timing: 50.24,
+    start: 51.92,
+    duration: 2.76,
     image: hashraa1
   },
   {
     text: 'מהלב...',
-    timing: 54,
-    start: null,
-    duration: 0
+    timing: 54.68,
+    start: 55.2,
+    duration: 1.16
   },
   {
     text: 'יונתן, המשך לככב!',
-    timing: 56,
-    start: null,
-    duration: 0
+    timing: 56.36,
+    start: 57.16,
+    duration: 2.84
   },
-  // from here accurate
   {
     text: 'דן דן בא ומשתף',
-    timing: 62,
+    timing: 64,
     start: 67.96,
-    duration: 0
+    duration: 2.32
   },
   {
     text: 'מה חווה בחוץ',
     timing: 70.28,
     start: 71.12,
-    duration: 0
+    duration: 2
   },
   {
     text: 'והבנות מתלהבות',
-    start: null,
-    duration: 0
+    timing: 73.12,
+    start: 74.48,
+    duration: 2
   },
   {
     text: 'מהלילה בקיבוץ',
-    start: null,
-    duration: 0
+    timing: 76.48,
+    start: 77.08,
+    duration: 4
   },
   {
     text: 'גלית מראה לי את העיר',
-    start: null,
-    duration: 0
+    timing: 80.92,
+    start: 81.08,
+    duration: 2
   },
   {
     text: 'וקסם שגילתה',
-    start: null,
-    duration: 0
+    timing: 83.08,
+    start: 83.12,
+    duration: 2.68
   },
   {
     text: 'המשפחה שלי בראש',
-    start: null,
-    duration: 0
+    timing: 85.8,
+    start: 87.8,
+    duration: 1.84
   },
   {
     text: 'היא נפלאה ואין בילתה',
-    start: null,
-    duration: 0,
+    timing: 89.64,
+    start: 89.68,
+    duration: 4,
     image: bilta
   },
   {
     text: 'יונתן אתה הבית',
+    timing: 93.86,
     start: null,
     duration: 0
   },
