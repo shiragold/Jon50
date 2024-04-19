@@ -24,7 +24,7 @@ onMounted(() => {
   height: calc(100vh - 2rem);
   width: 100vw;
   display: grid;
-  grid-template-rows: 2fr 1fr;
+  grid-template-rows: 80% 20%;
   place-content: center;
   place-items: center;
   direction: rtl;

@@ -12,15 +12,14 @@ const store = useContentStore()
 
 <template>
   <header class="header">
-    <nav class="header-nav">
-      <RouterLink v-if="isContent" to="/">
-        <img class="icon small" src="@icons/home.svg" alt="Go home" />
-      </RouterLink>
-    </nav>
     <h3 class="header-title">Jonathan 50th</h3>
     <nav class="header-nav">
       <RouterLink v-if="isContent && store.isPlaying" to="/">
         <img class="icon small" src="@icons/restart.svg" alt="Reset play" />
+      </RouterLink>
+      <div v-else class="icon small" />
+      <RouterLink v-if="isContent" to="/">
+        <img class="icon small" src="@icons/home.svg" alt="Go home" />
       </RouterLink>
     </nav>
   </header>
@@ -32,15 +31,19 @@ const store = useContentStore()
 .header {
   height: 2rem;
   display: grid;
-  grid-template-columns: 2rem auto 2rem;
+  grid-template-columns: auto 4rem;
   place-items: center;
 
   .header-title {
     place-self: start;
     align-self: center;
+    padding-left: 0.5rem;
   }
 
   .header-nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 0.5rem;
     height: 1.25rem;
   }
 }

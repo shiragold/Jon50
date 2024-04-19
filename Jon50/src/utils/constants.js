@@ -72,24 +72,24 @@ export const LYRICS_LIST = [
     text: 'אתה העוגן, אתה הלב',
     timing: 45.12,
     start: 47.4,
-    duration: 2.84
+    duration: 2.8
   },
   {
     text: 'השראה קטנה לכל ילד',
-    timing: 50.24,
+    timing: 50.28,
     start: 51.92,
-    duration: 2.76,
+    duration: 2.8,
     image: hashraa1
   },
   {
     text: 'מהלב...',
-    timing: 54.68,
+    timing: 54.72,
     start: 55.2,
-    duration: 1.16
+    duration: 1.2
   },
   {
     text: 'יונתן, המשך לככב!',
-    timing: 56.36,
+    timing: 56.4,
     start: 57.16,
     duration: 2.84
   },
@@ -145,126 +145,149 @@ export const LYRICS_LIST = [
   {
     text: 'יונתן אתה הבית',
     timing: 93.86,
-    start: null,
-    duration: 0
+    start: 96.96,
+    duration: 3.24
   },
   {
     text: 'אתה העוגן, אתה הלב',
-    start: null,
-    duration: 0
+    timing: 100.2,
+    start: 102.08,
+    duration: 2.8
   },
   {
     text: 'השראה קטנה לכל ילד',
-    start: null,
-    duration: 0,
+    timing: 104.88,
+    start: 106.6,
+    duration: 3,
     image: hashraa2
   },
   {
     text: 'מהלב...',
-    start: null,
-    duration: 0
+    timing: 109.6,
+    start: 109.96,
+    duration: 1.2
   },
   {
     text: 'יונתן, המשך לככב!',
-    start: null,
-    duration: 0
+    timing: 111.16,
+    start: 111.88,
+    duration: 2.84
   },
   {
     text: 'ביקרנו ביקב גדול',
-    start: null,
-    duration: 0
+    timing: 120,
+    start: 122.4,
+    duration: 2
   },
   {
     text: 'לטעום אתם יודעים',
-    start: null,
-    duration: 0
+    timing: 124.4,
+    start: 125.8,
+    duration: 2.12
   },
   {
     text: 'ומבלים שם חברים',
-    start: null,
-    duration: 0
+    timing: 127.92,
+    start: 129.4,
+    duration: 2
   },
   {
     text: 'מכל מיני מעגלים',
-    start: null,
-    duration: 0,
+    timing: 131.4,
+    start: 132.4,
+    duration: 3,
     image: maagalim
   },
   {
-    text: 'המפגש המשפחתי קרב',
-    start: null,
-    duration: 0
+    text: 'המפגש המשפחתי הוקדם',
+    timing: 135.4,
+    start: 135.8,
+    duration: 2
   },
   {
     text: 'יהיה מלא אור ועליז',
-    start: null,
-    duration: 0
+    timing: 137.8,
+    start: 137.88,
+    duration: 3
   },
   {
     text: 'אולי נטוס לאנגליה',
-    start: null,
-    duration: 0,
+    timing: 140.88,
+    start: 142.4,
+    duration: 2,
     image: london1
   },
   {
     text: 'לביקור זריז',
-    start: null,
-    duration: 0,
+    timing: 144.4,
+    start: 144.48,
+    duration: 4,
     image: london2
   },
   {
     text: 'יונתן אתה הבית',
-    start: null,
-    duration: 0
+    timing: 148.48,
+    start: 150.64,
+    duration: 3.76
   },
   {
     text: 'אתה העוגן, אתה הלב',
-    start: null,
-    duration: 0
+    timing: 154.4,
+    start: 156.4,
+    duration: 3.32
   },
   {
     text: 'השראה קטנה לכל ילד',
-    start: null,
-    duration: 0
+    timing: 159.72,
+    start: 161.32,
+    duration: 3
   },
   {
     text: 'עם תרמיל או עם מקל',
-    start: null,
-    duration: 0
+    timing: 164.32,
+    start: 166.6,
+    duration: 3
   },
   {
     text: 'מופת לארץ ישראל',
-    start: null,
-    duration: 0
+    timing: 169.6,
+    start: 171.6,
+    duration: 3
   },
   {
     text: 'מופת לארץ ישראל',
-    start: null,
-    duration: 0
+    timing: 174.6,
+    start: 176.88,
+    duration: 3
   },
   {
     text: 'יונתן אתה הבית',
-    start: null,
-    duration: 0
+    timing: 179.88,
+    start: 182,
+    duration: 3
   },
   {
     text: 'יונתן אתה הבית',
-    start: null,
-    duration: 0
+    timing: 185,
+    start: 186.48,
+    duration: 4
   },
   {
     text: 'יונתן אתה הבית',
-    start: null,
-    duration: 0
+    timing: 190.48,
+    start: 191.6,
+    duration: 3.8
   },
   {
     text: 'אתה',
-    start: null,
-    duration: 0
+    timing: 195.4,
+    start: 195.48,
+    duration: 1.12
   },
   {
     text: 'יונתן אתה הבית',
-    start: null,
-    duration: 0
+    timing: 196.6,
+    start: 197.32,
+    duration: 3
   }
 ]

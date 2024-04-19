@@ -43,7 +43,7 @@ onBeforeUnmount(() => {
 </script>
 
 <template>
-  <div>
+  <div class="content-image">
     <img v-if="content?.image" class="image" :src="content.image" />
   </div>
   <div class="content-lyrics">
@@ -52,7 +52,11 @@ onBeforeUnmount(() => {
 </template>
 
 <style>
-.content-lyrics {
-  align-self: start;
+.content-image {
+  height: 100%;
+
+  .image {
+    height: 100%;
+  }
 }
 </style>

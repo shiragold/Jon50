@@ -7,19 +7,6 @@
   font-weight: normal;
 }
 
-@media (min-width: 1024px) {
-  body {
-    display: flex;
-    place-items: center;
-  }
-
-  #app {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 0 2rem;
-  }
-}
-
 .icon {
   &.small {
     height: 1.25rem;
@@ -33,8 +20,4 @@
 .button {
   padding: 0.5rem 1.5rem;
   cursor: pointer;
-}
-
-.image {
-  height: 24rem;
 }
