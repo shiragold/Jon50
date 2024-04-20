@@ -24,5 +24,6 @@ onMounted(() => {
   width: 100vw;
   display: grid;
   place-content: center;
+  place-items: center;
 }
 </style>

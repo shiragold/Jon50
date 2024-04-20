@@ -58,19 +58,10 @@ onBeforeUnmount(() => {
 
 <style>
 .visuals {
-  height: calc(100vh - 2rem);
-  width: 100vw;
-  display: grid;
   grid-template-rows: 80% 20%;
-  place-content: center;
-  place-items: center;
-  direction: rtl;
 }
 
 .placeholder {
-  height: calc(100vh - 2rem);
-  width: 100vw;
-  display: grid;
-  place-content: center;
+  grid-template-rows: 8rem 4rem;
 }
 </style>
