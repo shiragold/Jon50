@@ -1,18 +1,11 @@
-import tivee from '@images/tivee.jpg'
-import hashraa1 from '@images/hashraa1.jpg'
-import bilta from '@images/bilta.jpg'
-import hashraa2 from '@images/hashraa2.jpg'
-import london1 from '@images/london1.jpg'
-import london2 from '@images/london2.jpg'
-import maagalim from '@images/maagalim.jpg'
+import images from '@images'
 
 export const LYRICS_LIST = [
   {
     text: 'אין שבת',
     timing: 7.8,
     start: 12.24,
-    duration: 1.6,
-    image: tivee
+    duration: 1.6
   },
   {
     text: 'בלי טיולים',
@@ -78,8 +71,7 @@ export const LYRICS_LIST = [
     text: 'אתה השראה לכל ילד',
     timing: 50.28,
     start: 51.92,
-    duration: 2.8,
-    image: hashraa1
+    duration: 2.8
   },
   {
     text: 'מהלב...',
@@ -139,8 +131,7 @@ export const LYRICS_LIST = [
     text: 'היא נפלאה ואין בילתה',
     timing: 89.64,
     start: 89.68,
-    duration: 4,
-    image: bilta
+    duration: 4
   },
   {
     text: 'יונתן אתה הבית',
@@ -158,8 +149,7 @@ export const LYRICS_LIST = [
     text: 'אתה השראה לכל ילד',
     timing: 104.88,
     start: 106.6,
-    duration: 3,
-    image: hashraa2
+    duration: 3
   },
   {
     text: 'מהלב...',
@@ -195,8 +185,7 @@ export const LYRICS_LIST = [
     text: 'מכל מיני מעגלים',
     timing: 131.4,
     start: 132.4,
-    duration: 3,
-    image: maagalim
+    duration: 3
   },
   {
     text: 'המפגש המשפחתי הוקדם',
@@ -214,15 +203,13 @@ export const LYRICS_LIST = [
     text: 'אולי נטוס לאנגליה',
     timing: 140.88,
     start: 142.4,
-    duration: 2,
-    image: london1
+    duration: 2
   },
   {
     text: 'לביקור זריז',
     timing: 144.4,
     start: 144.48,
-    duration: 4,
-    image: london2
+    duration: 4
   },
   {
     text: 'יונתן אתה הבית',

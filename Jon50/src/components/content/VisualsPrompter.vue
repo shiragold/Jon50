@@ -1,10 +1,15 @@
 <script setup>
 import { ref, onMounted, onBeforeUnmount } from 'vue'
 import { LYRICS_LIST } from '../../utils/constants'
+import images from '@images'
 import ImageContainer from '../reusables/ImageContainer.vue'
 import SpeechBubble from '../reusables/SpeechBubble.vue'
 
-const lyricsByTiming = LYRICS_LIST.reduce(
+const LYRICS_IMAGE_LIST = images.map((image, i) => ({
+  ...LYRICS_LIST[i],
+  image
+}))
+const lyricsByTiming = LYRICS_IMAGE_LIST.reduce(
   (acc, { timing, ...content }) =>
     timing
       ? {
