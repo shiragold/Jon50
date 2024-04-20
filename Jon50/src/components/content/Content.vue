@@ -10,7 +10,12 @@ onMounted(() => {
 </script>
 
 <template>
-  <VisualsPrompter class="content" />
+  <VisualsPrompter class="content">
+    <template #placeholder>
+      <h1 class="content-placeholder-header">יונתן</h1>
+      <h2 class="content-placeholder-title">אתה הבית!</h2>
+    </template>
+  </VisualsPrompter>
   <audio>
     <source src="@media/instrumental.mp3" type="audio/mpeg" />
   </audio>
@@ -25,5 +30,14 @@ onMounted(() => {
   display: grid;
   place-content: center;
   place-items: center;
+  background-color: lightskyblue;
+
+  .content-placeholder-header {
+    font-size: 8rem;
+  }
+
+  .content-placeholder-title {
+    font-size: 4rem;
+  }
 }
 </style>

@@ -33,11 +33,14 @@ const store = useContentStore()
   display: grid;
   grid-template-columns: auto 4rem;
   place-items: center;
+  border-bottom: 2px darkslateblue solid;
+  color: lightskyblue;
 
   .header-title {
     place-self: start;
     align-self: center;
     padding-left: 0.5rem;
+    font-weight: 600;
   }
 
   .header-nav {
