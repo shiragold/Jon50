@@ -1,6 +1,6 @@
 <script setup>
 import { onMounted } from 'vue'
-import LyricsPrompter from './VisualsPrompter.vue'
+import VisualsPrompter from './VisualsPrompter.vue'
 
 onMounted(() => {
   for (const audio of document.getElementsByTagName('audio')) {
@@ -10,9 +10,7 @@ onMounted(() => {
 </script>
 
 <template>
-  <div class="content">
-    <LyricsPrompter />
-  </div>
+  <VisualsPrompter class="content" />
   <audio>
     <source src="@media/instrumental.mp3" type="audio/mpeg" />
   </audio>
@@ -21,12 +19,10 @@ onMounted(() => {
 
 <style>
 .content {
+  direction: rtl;
   height: calc(100vh - 2rem);
   width: 100vw;
   display: grid;
-  grid-template-rows: 80% 20%;
   place-content: center;
-  place-items: center;
-  direction: rtl;
 }
 </style>

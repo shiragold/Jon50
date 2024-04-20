@@ -1,6 +1,7 @@
 <script setup>
 import { ref, onMounted, onBeforeUnmount } from 'vue'
 import { LYRICS_LIST } from '../../utils/constants'
+import VisualsImage from './VisualsImage.vue'
 import SpeechBubble from '../reusables/SpeechBubble.vue'
 
 const lyricsByTiming = LYRICS_LIST.reduce(
@@ -43,20 +44,33 @@ onBeforeUnmount(() => {
 </script>
 
 <template>
-  <div class="content-image">
-    <img v-if="content?.image" class="image" :src="content.image" />
+  <div v-if="content" class="visuals">
+    <VisualsImage :image="content.image" />
+    <div class="content-lyrics">
+      <SpeechBubble>{{ content.text }}</SpeechBubble>
+    </div>
   </div>
-  <div class="content-lyrics">
-    <SpeechBubble v-if="content">{{ content.text }}</SpeechBubble>
+  <div v-else class="placeholder">
+    <h1>יונתן</h1>
+    <h2>אתה הבית!</h2>
   </div>
 </template>
 
 <style>
-.content-image {
-  height: 100%;
+.visuals {
+  height: calc(100vh - 2rem);
+  width: 100vw;
+  display: grid;
+  grid-template-rows: 80% 20%;
+  place-content: center;
+  place-items: center;
+  direction: rtl;
+}
 
-  .image {
-    height: 100%;
-  }
+.placeholder {
+  height: calc(100vh - 2rem);
+  width: 100vw;
+  display: grid;
+  place-content: center;
 }
 </style>
