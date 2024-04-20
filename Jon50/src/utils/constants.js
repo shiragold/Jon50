@@ -75,7 +75,7 @@ export const LYRICS_LIST = [
     duration: 2.8
   },
   {
-    text: 'השראה קטנה לכל ילד',
+    text: 'אתה השראה לכל ילד',
     timing: 50.28,
     start: 51.92,
     duration: 2.8,
@@ -155,7 +155,7 @@ export const LYRICS_LIST = [
     duration: 2.8
   },
   {
-    text: 'השראה קטנה לכל ילד',
+    text: 'אתה השראה לכל ילד',
     timing: 104.88,
     start: 106.6,
     duration: 3,
@@ -237,7 +237,7 @@ export const LYRICS_LIST = [
     duration: 3.32
   },
   {
-    text: 'השראה קטנה לכל ילד',
+    text: 'אתה השראה לכל ילד',
     timing: 159.72,
     start: 161.32,
     duration: 3
