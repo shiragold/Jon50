@@ -28,12 +28,22 @@ import hashraa2 from '@images/hashraa2.jpg'
 import lekachev2 from '@images/lekachev2.jpg'
 
 import gadol from '@images/gadol.jpg'
+import yodiim from '@images/yodiim.jpg'
 import chaverim from '@images/chaverim.jpg'
 import maagalim from '@images/maagalim.jpg'
 import mifgash from '@images/mifgash.jpg'
 import aliz from '@images/aliz.jpg'
 import anglia from '@images/anglia.jpg'
 import zariz from '@images/zariz.jpg'
+
+import bait3 from '@images/bait3.jpg'
+import ogen3 from '@images/ogen3.jpg'
+import hashraa3 from '@images/hashraa3.jpg'
+import makel from '@images/makel.jpg'
+import israel from '@images/israel.jpg'
+import bait4 from '@images/bait4.jpg'
+import bait5 from '@images/bait5.jpg'
+import bait6 from '@images/bait6.jpg'
 
 export default [
   shabbat,
@@ -64,11 +74,17 @@ export default [
   hashraa2,
   lekachev2,
   gadol,
-  gadol,
+  yodiim,
   chaverim,
   maagalim,
   mifgash,
   aliz,
   anglia,
-  zariz
+  zariz,
+  bait3,
+  ogen3,
+  hashraa3,
+  makel,
+  israel,
+  israel
 ]

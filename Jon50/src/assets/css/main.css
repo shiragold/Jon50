@@ -20,4 +20,14 @@
 .button {
   padding: 0.5rem 1.5rem;
   cursor: pointer;
+  border: none;
+  border-radius: 2rem;
+  background-color: white;
+  color: darkslateblue;
+
+  &:hover {
+    box-shadow:
+      rgba(0, 0, 0, 0.12) 0px 1px 3px,
+      rgba(0, 0, 0, 0.24) 0px 1px 2px;
+  }
 }

@@ -7,12 +7,14 @@
     <h3 class="home-view-title">Wishing all the best, to another exciting decade!</h3>
     <RouterLink to="/content" class="home-view-play">
       <button class="button">
-        <img class="icon large" src="../assets/icons/music.svg" alt="Play music only" />
+        <!-- <object class="icon large" type="image/svg+xml" data="@icons/note.svg"></object> -->
+        <img class="icon large" src="@icons/note.svg" alt="Play music only" />
       </button>
     </RouterLink>
     <RouterLink to="/content/acapella" class="home-view-play">
       <button class="button">
-        <img class="icon large" src="../assets/icons/mic.svg" alt="Play with singer" />
+        <!-- <object class="icon large" type="image/svg+xml" data="@icons/mic.svg"></object> -->
+        <img class="icon large" src="@icons/mic.svg" alt="Play with singer" />
       </button>
     </RouterLink>
   </div>
