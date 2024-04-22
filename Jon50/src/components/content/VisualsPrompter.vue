@@ -3,7 +3,7 @@ import { ref, onMounted, onBeforeUnmount } from 'vue'
 import { LYRICS_LIST } from '../../utils/constants'
 import images from '@images'
 import ImageContainer from '../reusables/ImageContainer.vue'
-import SpeechBubble from '../reusables/SpeechBubble.vue'
+import LyricsContainer from '../reusables/LyricsContainer.vue'
 
 const LYRICS_IMAGE_LIST = images.map((image, i) => ({
   ...LYRICS_LIST[i],
@@ -34,7 +34,7 @@ const generateNextContent = () => {
   }
   interval = setTimeout(() => {
     content.value = { ...content.value, ...lyricsByTiming[times[timeIndex]] }
-    if (timeIndex < times.length) {
+    if (timeIndex < times.length - 1) {
       timeIndex++
       interval = generateNextContent()
     }
@@ -51,8 +51,8 @@ onBeforeUnmount(() => {
 <template>
   <div v-if="content" class="visuals">
     <ImageContainer :image="content.image" />
-    <div class="content-lyrics">
-      <SpeechBubble>{{ content.text }}</SpeechBubble>
+    <div>
+      <LyricsContainer :text="content.text" />
     </div>
   </div>
   <div v-else>

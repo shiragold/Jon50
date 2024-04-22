@@ -31,6 +31,7 @@ onMounted(() => {
   place-content: center;
   place-items: center;
   background-color: lightskyblue;
+  color: darkslateblue;
 
   .content-placeholder-header {
     font-size: 8rem;

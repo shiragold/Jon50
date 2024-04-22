@@ -1,13 +1,16 @@
 <script setup>
 defineProps({
-  image: String
+  image: {
+    type: String,
+    required: true
+  }
 })
 </script>
 
 <template>
   <div class="image-container">
     <Transition>
-      <img v-if="image" class="image" :src="image" />
+      <img :key="image" class="image" :src="image" />
     </Transition>
   </div>
 </template>
@@ -22,13 +25,11 @@ defineProps({
     border-radius: calc(1rem * infinity);
   }
 
-  .v-enter-active,
-  .v-leave-active {
-    transition: opacity 0.5s ease;
+  .v-enter-active {
+    transition: opacity 0.5s cubic-bezier(1, 0.5, 0.5, 1);
   }
 
-  .v-enter-from,
-  .v-leave-to {
+  .v-enter-from {
     opacity: 0;
   }
 }
