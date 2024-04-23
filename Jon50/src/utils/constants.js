@@ -1,22 +1,20 @@
-import images from '@images'
-
 export const LYRICS_LIST = [
   {
     text: 'אין שבת',
     timing: 7.8,
-    start: 12.24,
+    start: 4.44,
     duration: 1.6
   },
   {
     text: 'בלי טיולים',
     timing: 13.84,
-    start: 13.92,
+    start: 0.08,
     duration: 1.6
   },
   {
     text: 'ואי אפשר לישון',
     timing: 15.52,
-    start: 15.96,
+    start: 0.44,
     duration: 1.84
   },
   {

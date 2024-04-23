@@ -1,5 +1,9 @@
 <script setup>
 const props = defineProps({
+  timing: {
+    type: Number,
+    required: true
+  },
   text: {
     type: String,
     required: true
@@ -15,16 +19,16 @@ const props = defineProps({
 })
 let highlightActive = false
 const onBeforeEnter = () => {
-  setTimeout(() => {
-    highlightActive = true
-  }, props.start * 1000)
+  // setTimeout(() => {
+  //   highlightActive = true
+  // }, props.start * 1000)
 }
 </script>
 
 <template>
   <div class="lyrics-container" :class="{ 'highlight-active': highlightActive }">
     <Transition @before-enter="onBeforeEnter">
-      <span :key="text" class="lyrics">{{ text }}</span>
+      <span :key="timing" class="lyrics">{{ text }}</span>
     </Transition>
   </div>
 </template>
@@ -52,7 +56,7 @@ const onBeforeEnter = () => {
   &.highlight-active {
     background: white linear-gradient(darkslateblue, darkslateblue) no-repeat 0 0;
     background-size: 100% 100%;
-    animation: stripes 1s linear 1 forwards;
+    animation: stripes 1.6s linear 1 forwards;
 
     .lyrics {
       mix-blend-mode: multiply;

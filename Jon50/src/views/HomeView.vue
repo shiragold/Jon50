@@ -1,20 +1,21 @@
-<script setup></script>
+<script setup>
+import { NoteIcon, MicIcon } from '@icons'
+</script>
 
 <template>
   <div class="home-view">
     <h1 class="home-view-header">Sing-a-long</h1>
-    <h3 class="home-view-title">We're thrilled to celebrate with you...</h3>
-    <h3 class="home-view-title">Wishing all the best, to another exciting decade!</h3>
-    <RouterLink to="/content" class="home-view-play">
-      <button class="button">
-        <!-- <object class="icon large" type="image/svg+xml" data="@icons/note.svg"></object> -->
-        <img class="icon large" src="@icons/note.svg" alt="Play music only" />
+    <h3 class="home-view-title">
+      Thrilled to celebrate with you!<br />Wishing all the best...<br />to another exciting decade!
+    </h3>
+    <RouterLink class="home-view-play" to="/content" custom v-slot="{ navigate }">
+      <button class="button" @click="navigate">
+        <NoteIcon class="icon large" />
       </button>
     </RouterLink>
-    <RouterLink to="/content/acapella" class="home-view-play">
-      <button class="button">
-        <!-- <object class="icon large" type="image/svg+xml" data="@icons/mic.svg"></object> -->
-        <img class="icon large" src="@icons/mic.svg" alt="Play with singer" />
+    <RouterLink class="home-view-play" to="/content/acapella" custom v-slot="{ navigate }">
+      <button class="button" @click="navigate">
+        <MicIcon class="icon large" />
       </button>
     </RouterLink>
   </div>
@@ -24,27 +25,26 @@
 .home-view {
   height: calc(100vh - 2rem);
   display: grid;
-  grid-template-rows: 8rem 2rem 2rem 16rem;
+  grid-template-areas: 'header header' 'title title' 'play1 play2';
+  grid-template-rows: 4rem 8rem 16rem;
   grid-template-columns: repeat(2, 16rem);
-  grid-gap: 0.5rem 2rem;
-  grid-template-areas: 'header header' 'title1 title1' 'title2 title2' 'play1 play2';
-  grid-template-areas: 1fr 1fr;
+  grid-gap: 2rem;
   place-content: center;
   align-items: start;
   justify-items: center;
+  color: darkslateblue;
+  background-color: lightskyblue;
 
   .home-view-header {
+    grid-area: header;
     text-align: center;
     font-size: 4rem;
-    grid-area: header;
   }
 
-  .home-view-title:first-of-type {
-    grid-area: title1;
-  }
-
-  .home-view-title:last-of-type {
-    grid-area: title2;
+  .home-view-title {
+    grid-area: title;
+    text-align: center;
+    font-size: 2rem;
   }
 
   .home-view-play {

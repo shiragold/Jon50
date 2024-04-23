@@ -1,6 +1,7 @@
 <script setup>
 import { useContentStore } from '@/stores/content'
 import Content from '../components/content/Content.vue'
+import { PlayIcon } from '@icons'
 
 const store = useContentStore()
 </script>
@@ -9,7 +10,7 @@ const store = useContentStore()
   <Content v-if="store.isPlaying" />
   <div v-else class="content-view">
     <button class="button" @click="store.togglePlay()">
-      <img class="icon large" src="@icons/play.svg" alt="Start playing" />
+      <PlayIcon class="icon large" />
     </button>
   </div>
 </template>

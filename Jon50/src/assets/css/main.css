@@ -1,13 +1,13 @@
 @import './base.css';
 
 #app {
-  max-width: 1280px;
   height: 100vh;
-  margin: 0 auto;
   font-weight: normal;
 }
 
 .icon {
+  stroke: darkslateblue;
+
   &.small {
     height: 1.25rem;
   }
@@ -18,16 +18,18 @@
 }
 
 .button {
-  padding: 0.5rem 1.5rem;
-  cursor: pointer;
+  width: max-content;
+  height: max-content;
+  padding: 4% 8%;
   border: none;
-  border-radius: 2rem;
+  border-radius: 20%;
+  cursor: pointer;
   background-color: white;
   color: darkslateblue;
 
   &:hover {
     box-shadow:
-      rgba(0, 0, 0, 0.12) 0px 1px 3px,
-      rgba(0, 0, 0, 0.24) 0px 1px 2px;
+      darkslateblue 0px 1px 3px,
+      darkslateblue 0px 1px 2px;
   }
 }

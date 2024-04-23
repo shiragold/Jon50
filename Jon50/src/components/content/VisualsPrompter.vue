@@ -23,28 +23,21 @@ const times = Object.keys(lyricsByTiming)
   .map((time) => Number(time))
   .sort((time1, time2) => time1 - time2)
 
-let timeIndex = 0
 let content = ref(null)
-let interval = null
-
-const generateNextContent = () => {
-  let timeout = times[timeIndex]
-  if (timeIndex) {
-    timeout -= times[timeIndex - 1]
-  }
-  interval = setTimeout(() => {
-    content.value = { ...content.value, ...lyricsByTiming[times[timeIndex]] }
-    if (timeIndex < times.length - 1) {
-      timeIndex++
-      interval = generateNextContent()
-    }
-  }, timeout * 1000)
-}
-onMounted(generateNextContent)
+let intervalList = []
+onMounted(() => {
+  times.forEach((timing) => {
+    intervalList.push(
+      setTimeout(() => {
+        content.value = { ...content.value, ...lyricsByTiming[timing] }
+      }, timing * 1000)
+    )
+  })
+})
 
 onBeforeUnmount(() => {
-  clearInterval(interval)
-  interval = null
+  intervalList.forEach(clearInterval)
+  intervalList = null
 })
 </script>
 
@@ -52,7 +45,7 @@ onBeforeUnmount(() => {
   <div v-if="content" class="visuals">
     <ImageContainer :image="content.image" />
     <div>
-      <LyricsContainer :text="content.text" />
+      <LyricsContainer v-bind="content" />
     </div>
   </div>
   <div v-else>
