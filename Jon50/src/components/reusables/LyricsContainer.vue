@@ -1,6 +1,8 @@
 <script setup>
+import { watch, ref } from 'vue'
+
 const props = defineProps({
-  timing: {
+  index: {
     type: Number,
     required: true
   },
@@ -17,46 +19,57 @@ const props = defineProps({
     default: 0
   }
 })
-let highlightActive = false
-const onBeforeEnter = () => {
-  // setTimeout(() => {
-  //   highlightActive = true
-  // }, props.start * 1000)
-}
+
+watch(
+  () => props.start,
+  (newStart) => {
+    document.documentElement.style.setProperty('--transition-duration', `${newStart}s`)
+  },
+  { immediate: true }
+)
+watch(
+  () => props.duration,
+  (newDuration) => {
+    document.documentElement.style.setProperty('--fill-duration', `${newDuration}s`)
+  },
+  { immediate: true }
+)
+let fillActive = ref(false)
+const fillStart = () => (fillActive.value = true)
+const fillEnd = () => (fillActive.value = false)
 </script>
 
 <template>
-  <div class="lyrics-container" :class="{ 'highlight-active': highlightActive }">
-    <Transition @before-enter="onBeforeEnter">
-      <span :key="timing" class="lyrics">{{ text }}</span>
-    </Transition>
-  </div>
+  <Transition @after-enter="fillStart" @before-leave="fillEnd">
+    <span :key="index" class="lyrics-container" :class="{ fill: fillActive }">
+      <span class="lyrics">{{ text }}</span>
+    </span>
+  </Transition>
 </template>
 
 <style>
+@keyframes fill {
+  to {
+    background-size: 0 100%;
+  }
+}
+
 .lyrics-container {
   border-radius: calc(infinity * 1px);
-  background-color: white;
-  color: lightskyblue;
-  font-size: 4rem;
-  padding: 1rem 2rem;
-
-  .v-enter-active {
-    transition: opacity 0.5s ease;
-  }
-
-  .v-enter-from {
-    opacity: 0;
-  }
+  background: linear-gradient(var(--color-light), var(--color-light)) var(--color-dark) no-repeat 0
+    0;
+  background-size: 100% 100%;
 
   .lyrics {
     display: table;
+    padding: 1rem 2rem;
+    border-radius: calc(infinity * 1px);
+    font-size: 4rem;
+    color: var(--color-primary);
   }
 
-  &.highlight-active {
-    background: white linear-gradient(darkslateblue, darkslateblue) no-repeat 0 0;
-    background-size: 100% 100%;
-    animation: stripes 1.6s linear 1 forwards;
+  &.fill {
+    animation: fill var(--fill-duration) linear 1 backwards;
 
     .lyrics {
       mix-blend-mode: multiply;
@@ -64,9 +77,18 @@ const onBeforeEnter = () => {
   }
 }
 
-@keyframes stripes {
-  to {
-    background-size: 0 100%;
-  }
+.v-enter-active,
+.v-leave-active {
+  transition: all var(--transition-duration) ease-out;
+}
+
+.v-enter-from {
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+.v-leave-from,
+.v-leave-to {
+  display: none;
 }
 </style>

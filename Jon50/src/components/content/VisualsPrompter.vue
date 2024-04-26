@@ -10,13 +10,10 @@ const LYRICS_IMAGE_LIST = images.map((image, i) => ({
   image
 }))
 const lyricsByTiming = LYRICS_IMAGE_LIST.reduce(
-  (acc, { timing, ...content }) =>
-    timing
-      ? {
-          ...acc,
-          [timing]: content
-        }
-      : acc,
+  (acc, { timing, ...content }) => ({
+    ...acc,
+    [timing]: content
+  }),
   {}
 )
 const times = Object.keys(lyricsByTiming)
@@ -26,10 +23,14 @@ const times = Object.keys(lyricsByTiming)
 let content = ref(null)
 let intervalList = []
 onMounted(() => {
-  times.forEach((timing) => {
+  times.forEach((timing, index) => {
     intervalList.push(
       setTimeout(() => {
-        content.value = { ...content.value, ...lyricsByTiming[timing] }
+        content.value = {
+          index,
+          ...content.value,
+          ...lyricsByTiming[timing]
+        }
       }, timing * 1000)
     )
   })
