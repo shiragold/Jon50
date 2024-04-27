@@ -51,13 +51,8 @@ onBeforeUnmount(() => {
     <div v-else>
       <slot name="placeholder" />
     </div>
-    <div>
-      <LyricsContainer v-show="currentLyrics" v-bind="currentLyrics" />
-    </div>
-  </div>
-  <!-- <div>
     <LyricsContainer v-show="currentLyrics" v-bind="currentLyrics" />
-  </div> -->
+  </div>
 </template>
 
 <style>
