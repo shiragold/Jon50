@@ -1,40 +1,26 @@
 <script setup>
 import { ref, onMounted, onBeforeUnmount } from 'vue'
-import { LYRICS_LIST } from '../../utils/constants'
-import images from '@images'
+import { VISUALS_TIMING_LIST } from '../../utils/constants'
 import ImageContainer from '../reusables/ImageContainer.vue'
 import LyricsContainer from '../reusables/LyricsContainer.vue'
-
-const VISUALS_LIST = images.map((image, i) => ({
-  ...LYRICS_LIST[i],
-  image
-}))
-const lyricsByTiming = VISUALS_LIST.reduce(
-  (acc, { timing, ...content }) => ({
-    ...acc,
-    [timing]: content
-  }),
-  {}
-)
-const times = Object.keys(lyricsByTiming)
-  .map((time) => Number(time))
-  .sort((time1, time2) => time1 - time2)
 
 let currentImage = ref(null)
 let currentLyrics = ref(null)
 let intervalList = []
 onMounted(() => {
-  times.forEach((timing, index) => {
+  VISUALS_TIMING_LIST.forEach((visuals, index) => {
+    const { time, image, ...lyrics } = visuals
     intervalList.push(
       setTimeout(() => {
-        const { image, ...lyrics } = lyricsByTiming[timing]
+        if (image) {
+          currentImage.value = image
+        }
         currentLyrics.value = {
           ...currentLyrics.value,
           ...lyrics,
           index
         }
-        currentImage.value = image
-      }, timing * 1000)
+      }, time * 1000)
     )
   })
 })

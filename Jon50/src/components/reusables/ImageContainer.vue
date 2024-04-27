@@ -26,7 +26,7 @@ defineProps({
   }
 
   .v-enter-active {
-    transition: opacity 0.5s cubic-bezier(1, 0.5, 0.5, 1);
+    transition: opacity 0.2s cubic-bezier(1, 0.5, 0.5, 1);
   }
 
   .v-enter-from {
