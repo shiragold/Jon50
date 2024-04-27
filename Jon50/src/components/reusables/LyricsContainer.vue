@@ -2,15 +2,11 @@
 import { watch, ref } from 'vue'
 
 const props = defineProps({
-  index: {
-    type: Number,
-    default: -1
-  },
   text: {
     type: String,
     default: ''
   },
-  duration: {
+  fill: {
     type: Number,
     default: 0
   }
@@ -18,10 +14,10 @@ const props = defineProps({
 
 let fillActive = ref(false)
 watch(
-  () => props.duration,
-  (newDuration) => {
+  () => props.fill,
+  (newFill) => {
     fillActive.value = true
-    document.documentElement.style.setProperty('--fill-duration', `${newDuration ?? 0}s`)
+    document.documentElement.style.setProperty('--fill-duration', `${newFill ?? 0}s`)
   }
 )
 const stopFill = () => (fillActive.value = false)

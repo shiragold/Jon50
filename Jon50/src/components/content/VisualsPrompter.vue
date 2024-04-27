@@ -8,7 +8,7 @@ let currentImage = ref(null)
 let currentLyrics = ref(null)
 let intervalList = []
 onMounted(() => {
-  VISUALS_TIMING_LIST.forEach((visuals, index) => {
+  VISUALS_TIMING_LIST.forEach((visuals) => {
     const { time, image, ...lyrics } = visuals
     intervalList.push(
       setTimeout(() => {
@@ -17,8 +17,7 @@ onMounted(() => {
         }
         currentLyrics.value = {
           ...currentLyrics.value,
-          ...lyrics,
-          index
+          ...lyrics
         }
       }, time * 1000)
     )

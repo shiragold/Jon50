@@ -8,7 +8,7 @@ export const VISUALS_TIMING_LIST = [
   },
   {
     time: 12.24,
-    duration: 1.6
+    fill: 1.6
   },
   {
     time: 13.8,
@@ -17,7 +17,7 @@ export const VISUALS_TIMING_LIST = [
   },
   {
     time: 13.92,
-    duration: 1.6
+    fill: 1.6
   },
   {
     time: 15.52,
@@ -26,7 +26,7 @@ export const VISUALS_TIMING_LIST = [
   },
   {
     time: 15.96,
-    duration: 1.84
+    fill: 1.84
   },
   {
     time: 17.8,
@@ -35,7 +35,7 @@ export const VISUALS_TIMING_LIST = [
   },
   {
     time: 19.4,
-    duration: 1.6
+    fill: 1.6
   },
   {
     time: 22.16,
@@ -44,7 +44,7 @@ export const VISUALS_TIMING_LIST = [
   },
   {
     time: 22.76,
-    duration: 2.2
+    fill: 2.2
   },
   {
     time: 24.96,
@@ -53,7 +53,7 @@ export const VISUALS_TIMING_LIST = [
   },
   {
     time: 26.2,
-    duration: 1.92
+    fill: 1.92
   },
   {
     time: 28.12,
@@ -62,7 +62,7 @@ export const VISUALS_TIMING_LIST = [
   },
   {
     time: 28.2,
-    duration: 2.68
+    fill: 2.68
   },
   {
     time: 30.88,
@@ -71,7 +71,7 @@ export const VISUALS_TIMING_LIST = [
   },
   {
     time: 32.84,
-    duration: 2.08
+    fill: 2.08
   },
   {
     time: 34.92,
@@ -80,7 +80,7 @@ export const VISUALS_TIMING_LIST = [
   },
   {
     time: 34.96,
-    duration: 3.84
+    fill: 3.84
   },
   {
     time: 38.8,
@@ -89,7 +89,7 @@ export const VISUALS_TIMING_LIST = [
   },
   {
     time: 42.16,
-    duration: 3.02
+    fill: 3.02
   },
   {
     time: 45.12,
@@ -98,7 +98,7 @@ export const VISUALS_TIMING_LIST = [
   },
   {
     time: 47.4,
-    duration: 2.8
+    fill: 2.8
   },
   {
     time: 50.28,
@@ -107,7 +107,7 @@ export const VISUALS_TIMING_LIST = [
   },
   {
     time: 51.92,
-    duration: 2.8
+    fill: 2.8
   },
   {
     time: 54.72,
@@ -116,7 +116,7 @@ export const VISUALS_TIMING_LIST = [
   },
   {
     time: 55.2,
-    duration: 1.2
+    fill: 1.2
   },
   {
     time: 56.4,
@@ -125,7 +125,7 @@ export const VISUALS_TIMING_LIST = [
   },
   {
     time: 57.16,
-    duration: 2.84
+    fill: 2.84
   },
   {
     time: 64,
@@ -134,7 +134,7 @@ export const VISUALS_TIMING_LIST = [
   },
   {
     time: 67.96,
-    duration: 2.32
+    fill: 2.32
   },
   {
     time: 70.28,
@@ -143,7 +143,7 @@ export const VISUALS_TIMING_LIST = [
   },
   {
     time: 71.12,
-    duration: 2
+    fill: 2
   },
   {
     time: 73.12,
@@ -152,7 +152,7 @@ export const VISUALS_TIMING_LIST = [
   },
   {
     time: 74.48,
-    duration: 2
+    fill: 2
   },
   {
     time: 76.48,
@@ -161,7 +161,7 @@ export const VISUALS_TIMING_LIST = [
   },
   {
     time: 77.08,
-    duration: 4
+    fill: 4
   },
   {
     time: 80.92,
@@ -170,7 +170,7 @@ export const VISUALS_TIMING_LIST = [
   },
   {
     time: 81.08,
-    duration: 2
+    fill: 2
   },
   {
     time: 83.08,
@@ -179,7 +179,7 @@ export const VISUALS_TIMING_LIST = [
   },
   {
     time: 83.12,
-    duration: 2.68
+    fill: 2.68
   },
   {
     time: 85.8,
@@ -188,7 +188,7 @@ export const VISUALS_TIMING_LIST = [
   },
   {
     time: 87.8,
-    duration: 1.84
+    fill: 1.84
   },
   {
     time: 89.64,
@@ -197,7 +197,7 @@ export const VISUALS_TIMING_LIST = [
   },
   {
     time: 89.68,
-    duration: 4
+    fill: 4
   },
   {
     time: 93.86,
@@ -206,7 +206,7 @@ export const VISUALS_TIMING_LIST = [
   },
   {
     time: 96.96,
-    duration: 3.24
+    fill: 3.24
   },
   {
     time: 100.2,
@@ -215,7 +215,7 @@ export const VISUALS_TIMING_LIST = [
   },
   {
     time: 102.08,
-    duration: 2.8
+    fill: 2.8
   },
   {
     time: 104.88,
@@ -224,7 +224,7 @@ export const VISUALS_TIMING_LIST = [
   },
   {
     time: 106.6,
-    duration: 3
+    fill: 3
   },
   {
     time: 109.6,
@@ -233,7 +233,7 @@ export const VISUALS_TIMING_LIST = [
   },
   {
     time: 109.96,
-    duration: 1.2
+    fill: 1.2
   },
   {
     time: 111.16,
@@ -242,7 +242,7 @@ export const VISUALS_TIMING_LIST = [
   },
   {
     time: 111.88,
-    duration: 2.84
+    fill: 2.84
   },
   {
     time: 120,
@@ -251,7 +251,7 @@ export const VISUALS_TIMING_LIST = [
   },
   {
     time: 122.4,
-    duration: 2
+    fill: 2
   },
   {
     time: 124.4,
@@ -260,7 +260,7 @@ export const VISUALS_TIMING_LIST = [
   },
   {
     time: 125.8,
-    duration: 2.12
+    fill: 2.12
   },
   {
     time: 127.92,
@@ -269,7 +269,7 @@ export const VISUALS_TIMING_LIST = [
   },
   {
     time: 129.4,
-    duration: 2
+    fill: 2
   },
   {
     time: 131.4,
@@ -278,7 +278,7 @@ export const VISUALS_TIMING_LIST = [
   },
   {
     time: 132.4,
-    duration: 3
+    fill: 3
   },
   {
     time: 135.4,
@@ -287,7 +287,7 @@ export const VISUALS_TIMING_LIST = [
   },
   {
     time: 135.8,
-    duration: 2
+    fill: 2
   },
   {
     time: 137.8,
@@ -296,7 +296,7 @@ export const VISUALS_TIMING_LIST = [
   },
   {
     time: 137.88,
-    duration: 3
+    fill: 3
   },
   {
     time: 140.88,
@@ -305,7 +305,7 @@ export const VISUALS_TIMING_LIST = [
   },
   {
     time: 142.4,
-    duration: 2
+    fill: 2
   },
   {
     time: 144.4,
@@ -314,7 +314,7 @@ export const VISUALS_TIMING_LIST = [
   },
   {
     time: 144.48,
-    duration: 4
+    fill: 4
   },
   {
     time: 148.48,
@@ -323,7 +323,7 @@ export const VISUALS_TIMING_LIST = [
   },
   {
     time: 150.64,
-    duration: 3.76
+    fill: 3.76
   },
   {
     time: 154.4,
@@ -332,7 +332,7 @@ export const VISUALS_TIMING_LIST = [
   },
   {
     time: 156.4,
-    duration: 3.32
+    fill: 3.32
   },
   {
     time: 159.72,
@@ -341,7 +341,7 @@ export const VISUALS_TIMING_LIST = [
   },
   {
     time: 161.32,
-    duration: 3
+    fill: 3
   },
   {
     time: 164.32,
@@ -350,7 +350,7 @@ export const VISUALS_TIMING_LIST = [
   },
   {
     time: 166.6,
-    duration: 3
+    fill: 3
   },
   {
     time: 169.6,
@@ -359,7 +359,7 @@ export const VISUALS_TIMING_LIST = [
   },
   {
     time: 171.6,
-    duration: 3
+    fill: 3
   },
   {
     time: 174.6,
@@ -368,7 +368,7 @@ export const VISUALS_TIMING_LIST = [
   },
   {
     time: 176.88,
-    duration: 3
+    fill: 3
   },
   {
     time: 179.88,
@@ -377,7 +377,7 @@ export const VISUALS_TIMING_LIST = [
   },
   {
     time: 182,
-    duration: 3
+    fill: 3
   },
   {
     time: 185,
@@ -386,7 +386,7 @@ export const VISUALS_TIMING_LIST = [
   },
   {
     time: 186.48,
-    duration: 4
+    fill: 4
   },
   {
     time: 190.48,
@@ -395,7 +395,7 @@ export const VISUALS_TIMING_LIST = [
   },
   {
     time: 191.6,
-    duration: 3.8
+    fill: 3.8
   },
   {
     time: 195.4,
@@ -404,7 +404,7 @@ export const VISUALS_TIMING_LIST = [
   },
   {
     time: 195.48,
-    duration: 1.12
+    fill: 1.12
   },
   {
     time: 196.6,
@@ -413,6 +413,6 @@ export const VISUALS_TIMING_LIST = [
   },
   {
     time: 197.32,
-    duration: 3
+    fill: 3
   }
 ]
