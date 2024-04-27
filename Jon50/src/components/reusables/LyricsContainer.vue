@@ -4,11 +4,11 @@ import { watch, ref } from 'vue'
 const props = defineProps({
   index: {
     type: Number,
-    required: true
+    default: -1
   },
   text: {
     type: String,
-    required: true
+    default: ''
   },
   start: {
     type: Number,
@@ -65,6 +65,7 @@ const fillEnd = () => (fillActive.value = false)
     padding: 1rem 2rem;
     border-radius: calc(infinity * 1px);
     font-size: 4rem;
+    background-color: var(--color-light);
     color: var(--color-primary);
   }
 

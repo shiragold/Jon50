@@ -8,13 +8,13 @@ import { NoteIcon, MicIcon } from '@icons'
     <h3 class="home-view-title">
       Thrilled to celebrate with you!<br />Wishing all the best...<br />to another exciting decade!
     </h3>
-    <RouterLink class="home-view-play" to="/content" custom v-slot="{ navigate }">
-      <button class="button" @click="navigate">
+    <RouterLink to="/content" custom v-slot="{ navigate }">
+      <button class="home-view-play button" @click="navigate">
         <NoteIcon class="icon large" />
       </button>
     </RouterLink>
-    <RouterLink class="home-view-play" to="/content/acapella" custom v-slot="{ navigate }">
-      <button class="button" @click="navigate">
+    <RouterLink to="/content/acapella" custom v-slot="{ navigate }">
+      <button class="home-view-play button" @click="navigate">
         <MicIcon class="icon large" />
       </button>
     </RouterLink>
@@ -44,6 +44,7 @@ import { NoteIcon, MicIcon } from '@icons'
   .home-view-title {
     grid-area: title;
     text-align: center;
+    line-height: 3rem;
     font-size: 2rem;
   }
 

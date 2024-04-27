@@ -5,11 +5,11 @@ import images from '@images'
 import ImageContainer from '../reusables/ImageContainer.vue'
 import LyricsContainer from '../reusables/LyricsContainer.vue'
 
-const LYRICS_IMAGE_LIST = images.map((image, i) => ({
+const VISUALS_LIST = images.map((image, i) => ({
   ...LYRICS_LIST[i],
   image
 }))
-const lyricsByTiming = LYRICS_IMAGE_LIST.reduce(
+const lyricsByTiming = VISUALS_LIST.reduce(
   (acc, { timing, ...content }) => ({
     ...acc,
     [timing]: content
@@ -20,17 +20,20 @@ const times = Object.keys(lyricsByTiming)
   .map((time) => Number(time))
   .sort((time1, time2) => time1 - time2)
 
-let content = ref(null)
+let currentImage = ref(null)
+let currentLyrics = ref(null)
 let intervalList = []
 onMounted(() => {
   times.forEach((timing, index) => {
     intervalList.push(
       setTimeout(() => {
-        content.value = {
-          index,
-          ...content.value,
-          ...lyricsByTiming[timing]
+        const { image, ...lyrics } = lyricsByTiming[timing]
+        currentLyrics.value = {
+          ...currentLyrics.value,
+          ...lyrics,
+          index
         }
+        currentImage.value = image
       }, timing * 1000)
     )
   })
@@ -43,15 +46,18 @@ onBeforeUnmount(() => {
 </script>
 
 <template>
-  <div v-if="content" class="visuals">
-    <ImageContainer :image="content.image" />
+  <div class="visuals">
+    <ImageContainer v-if="currentImage" :image="currentImage" />
+    <div v-else>
+      <slot name="placeholder" />
+    </div>
     <div>
-      <LyricsContainer v-bind="content" />
+      <LyricsContainer v-show="currentLyrics" v-bind="currentLyrics" />
     </div>
   </div>
-  <div v-else>
-    <slot name="placeholder" />
-  </div>
+  <!-- <div>
+    <LyricsContainer v-show="currentLyrics" v-bind="currentLyrics" />
+  </div> -->
 </template>
 
 <style>
