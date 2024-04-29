@@ -15,5 +15,6 @@ export default defineConfig({
       '@icons': fileURLToPath(new URL('./src/components/reusables/icons', import.meta.url)),
       '@content': fileURLToPath(new URL('./src/components/content', import.meta.url))
     }
-  }
+  },
+  base: '/Jon50/'
 })
