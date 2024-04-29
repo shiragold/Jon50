@@ -5,24 +5,25 @@ import ImageContainer from '../reusables/ImageContainer.vue'
 import LyricsContainer from '../reusables/LyricsContainer.vue'
 
 let currentImage = ref(null)
-let currentLyrics = ref(null)
+let currentLyrics = ref({
+  index: 0
+})
 let intervalList = []
-let index = 0
 onMounted(() => {
   VISUALS_TIMING_LIST.forEach((visuals) => {
-    const { time, image, ...lyrics } = visuals
+    const { time, image, fill, ...lyrics } = visuals
     intervalList.push(
       setTimeout(() => {
         if (image) {
           currentImage.value = image
         }
         if (lyrics.text) {
-          index++
+          currentLyrics.value.index++
         }
         currentLyrics.value = {
           ...currentLyrics.value,
           ...lyrics,
-          index
+          fill
         }
       }, time * 1000)
     )

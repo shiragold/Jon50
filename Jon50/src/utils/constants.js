@@ -11,106 +11,106 @@ export const VISUALS_TIMING_LIST = [
     fill: 1
   },
   {
-    time: 13.8,
+    time: 14,
     text: 'בלי טיולים',
     image: images[1]
   },
   {
-    time: 13.92,
-    fill: 1.56
+    time: 14.2,
+    fill: 1.4
   },
   {
-    time: 15.52,
+    time: 16,
     text: 'ואי אפשר לישון',
     image: images[2]
   },
   {
-    time: 15.96,
-    fill: 1.84
+    time: 16.2,
+    fill: 1.6
   },
   {
-    time: 17.8,
+    time: 18,
     text: 'מוביל בדיוק לפי התכנית',
     image: images[3]
   },
   {
-    time: 19.4,
+    time: 19.6,
     fill: 1.8
   },
   {
-    time: 22.16,
+    time: 22,
     text: 'תמיד צועד ראשון',
     image: images[4]
   },
   {
-    time: 22.76,
-    fill: 2.2
+    time: 23,
+    fill: 2
   },
   {
-    time: 24.96,
+    time: 25.2,
     text: 'הסברים על השבילים',
     image: images[5]
   },
   {
-    time: 26,
-    fill: 1.92
+    time: 26.4,
+    fill: 1.8
   },
   {
-    time: 28.12,
+    time: 28.4,
     text: 'כל סיפור הוא אמיתי',
     image: images[6]
   },
   {
-    time: 28.2,
-    fill: 2.68
+    time: 28.5,
+    fill: 2.6
   },
   {
-    time: 30.88,
+    time: 31.4,
     text: 'אני מרגיש פשוט טבעי',
     image: images[7]
   },
   {
-    time: 32.84,
-    fill: 2.08
+    time: 33,
+    fill: 2
   },
   {
-    time: 34.92,
+    time: 35,
     text: 'כאילו זה ביתי',
     image: images[8]
   },
   {
-    time: 34.96,
-    fill: 3.84
+    time: 35.2,
+    fill: 3.6
   },
   {
-    time: 38.8,
+    time: 39,
     text: 'יונתן אתה הבית',
     image: images[9]
   },
   {
-    time: 42.16,
-    fill: 3.02
+    time: 42.2,
+    fill: 2.8
   },
   {
-    time: 45.12,
+    time: 45.2,
     text: 'אתה העוגן, אתה הלב',
     image: images[10]
   },
   {
     time: 47.4,
-    fill: 2.8
+    fill: 2.6
   },
   {
-    time: 50.28,
+    time: 50.2,
     text: 'השראה קטנה לכל ילד',
     image: images[11]
   },
   {
-    time: 51.92,
-    fill: 2.6
+    time: 51.8,
+    fill: 2.4
   },
   {
-    time: 54.72,
+    time: 55,
     text: 'מהלב...',
     image: images[12]
   },
@@ -124,8 +124,8 @@ export const VISUALS_TIMING_LIST = [
     image: images[13]
   },
   {
-    time: 57.16,
-    fill: 2.84
+    time: 57,
+    fill: 2.8
   },
   {
     time: 64,
@@ -142,47 +142,47 @@ export const VISUALS_TIMING_LIST = [
     image: images[15]
   },
   {
-    time: 71.12,
+    time: 71.2,
     fill: 1.8
   },
   {
-    time: 73.12,
+    time: 73.4,
     text: 'והבנות מתלהבות',
     image: images[16]
   },
   {
-    time: 74,
+    time: 74.4,
     fill: 1.6
   },
   {
-    time: 76.48,
+    time: 76.4,
     text: 'מהלילה בקיבוץ',
     image: images[17]
   },
   {
-    time: 77,
+    time: 77.4,
     fill: 3.6
   },
   {
-    time: 80.92,
+    time: 81,
     text: 'גלית מראה לי את העיר',
     image: images[18]
   },
   {
-    time: 81.08,
-    fill: 2
+    time: 81.1,
+    fill: 1.8
   },
   {
-    time: 83.08,
+    time: 83,
     text: 'וקסם שגילתה',
     image: images[19]
   },
   {
-    time: 83.12,
-    fill: 2.68
+    time: 83.2,
+    fill: 2.6
   },
   {
-    time: 85.8,
+    time: 86,
     text: 'המשפחה שלי בראש',
     image: images[20]
   },
@@ -191,12 +191,12 @@ export const VISUALS_TIMING_LIST = [
     fill: 1.8
   },
   {
-    time: 89.64,
+    time: 89.7,
     text: 'היא נפלאה ואין בילתה',
     image: images[21]
   },
   {
-    time: 89.68,
+    time: 89.8,
     fill: 4
   },
   {
@@ -205,8 +205,8 @@ export const VISUALS_TIMING_LIST = [
     image: images[22]
   },
   {
-    time: 96.96,
-    fill: 3.24
+    time: 96.8,
+    fill: 3.2
   },
   {
     time: 100.2,
@@ -214,11 +214,11 @@ export const VISUALS_TIMING_LIST = [
     image: images[23]
   },
   {
-    time: 102.08,
-    fill: 2.8
+    time: 102,
+    fill: 2.6
   },
   {
-    time: 104.88,
+    time: 104.8,
     text: 'השראה קטנה לכל ילד',
     image: images[24]
   },
@@ -227,22 +227,22 @@ export const VISUALS_TIMING_LIST = [
     fill: 3
   },
   {
-    time: 109.6,
+    time: 109.7,
     text: 'מהלב...',
     image: images[25]
   },
   {
-    time: 109.96,
+    time: 109.8,
     fill: 1.2
   },
   {
-    time: 111.16,
+    time: 111.2,
     text: 'יונתן, המשך לככב!',
     image: images[26]
   },
   {
-    time: 111.88,
-    fill: 2.84
+    time: 111.8,
+    fill: 2.8
   },
   {
     time: 120,
@@ -250,29 +250,29 @@ export const VISUALS_TIMING_LIST = [
     image: images[27]
   },
   {
-    time: 122,
+    time: 122.2,
     fill: 2
   },
   {
-    time: 124.4,
+    time: 124.6,
     text: 'לטעום אתם יודעים',
     image: images[28]
   },
   {
-    time: 125.8,
-    fill: 2.12
+    time: 125.4,
+    fill: 2
   },
   {
-    time: 127.92,
+    time: 128,
     text: 'ומבלים שם חברים',
     image: images[29]
   },
   {
-    time: 129.4,
+    time: 129.2,
     fill: 2
   },
   {
-    time: 131.4,
+    time: 131.6,
     text: 'מכל מיני מעגלים',
     image: images[30]
   },
@@ -281,25 +281,25 @@ export const VISUALS_TIMING_LIST = [
     fill: 3
   },
   {
-    time: 135.4,
+    time: 135.6,
     text: 'המפגש המשפחתי הוקדם',
     image: images[31]
   },
   {
-    time: 135.8,
+    time: 136,
     fill: 1.8
   },
   {
-    time: 137.8,
+    time: 138,
     text: 'יהיה מלא אור ועליז',
     image: images[32]
   },
   {
-    time: 137.88,
-    fill: 3
+    time: 138.2,
+    fill: 2.6
   },
   {
-    time: 140.88,
+    time: 140.9,
     text: 'אולי נטוס לאנגליה',
     image: images[33]
   },
@@ -308,22 +308,22 @@ export const VISUALS_TIMING_LIST = [
     fill: 2
   },
   {
-    time: 144.4,
+    time: 144.5,
     text: 'לביקור זריז',
     image: images[34]
   },
   {
-    time: 144.48,
+    time: 144.6,
     fill: 3.6
   },
   {
-    time: 148.48,
+    time: 148.4,
     text: 'יונתן אתה הבית',
     image: images[35]
   },
   {
     time: 150.8,
-    fill: 3.6
+    fill: 3.4
   },
   {
     time: 154.4,
@@ -332,25 +332,25 @@ export const VISUALS_TIMING_LIST = [
   },
   {
     time: 156.4,
-    fill: 3.32
+    fill: 3.2
   },
   {
-    time: 159.72,
+    time: 159.8,
     text: 'השראה קטנה לכל ילד',
     image: images[37]
   },
   {
-    time: 161.32,
+    time: 161.2,
     fill: 2.8
   },
   {
-    time: 164.32,
+    time: 164.2,
     text: 'עם תרמיל או עם מקל',
     image: images[38]
   },
   {
     time: 166,
-    fill: 2.8
+    fill: 2.4
   },
   {
     time: 169.6,
@@ -367,52 +367,52 @@ export const VISUALS_TIMING_LIST = [
     image: images[40]
   },
   {
-    time: 176.88,
+    time: 176.8,
     fill: 2.4
   },
   {
-    time: 179.88,
+    time: 179.8,
     text: 'יונתן אתה הבית',
     image: images[41]
   },
   {
     time: 182,
-    fill: 2.8
+    fill: 3
   },
   {
-    time: 185,
+    time: 185.2,
     text: 'יונתן אתה הבית',
     image: images[42]
   },
   {
     time: 186,
-    fill: 3.6
+    fill: 3
   },
   {
-    time: 190.48,
+    time: 190.4,
     text: 'יונתן אתה הבית',
     image: images[43]
   },
   {
     time: 191,
-    fill: 3.6
+    fill: 3
   },
   {
-    time: 195.4,
+    time: 195.2,
     text: 'אתה',
     image: images[44]
   },
   {
-    time: 195.48,
-    fill: 1.12
+    time: 195.4,
+    fill: 1.2
   },
   {
-    time: 196.6,
+    time: 196.7,
     text: 'יונתן אתה הבית',
     image: images[45]
   },
   {
-    time: 197.32,
+    time: 197.2,
     fill: 3
   }
 ]
