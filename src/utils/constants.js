@@ -8,6 +8,10 @@ export const VISUALS_TIMING_LIST = [
   },
   {
     time: 12.8,
+    dump: 1
+  },
+  {
+    time: 12.8,
     fill: 1
   },
   {
