@@ -1,0 +1,1 @@
+import{_ as e,c as o,o as s,a}from"./index-BvdIO5GY.js";const c="/assets/acapella-DJ_ovHjf.mp3",t={},r=a("source",{src:c,type:"audio/mpeg"},null,-1),_=[r];function n(l,p){return s(),o("audio",null,_)}const i=e(t,[["render",n]]);export{i as default};

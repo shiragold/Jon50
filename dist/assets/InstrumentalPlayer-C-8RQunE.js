@@ -1,0 +1,1 @@
+import{_ as e,c as s,o as t,a as o}from"./index-BvdIO5GY.js";const c="/assets/instrumental-DkCK2XMi.mp3",n={},a=o("source",{src:c,type:"audio/mpeg"},null,-1),r=[a];function _(l,i){return t(),s("audio",null,r)}const m=e(n,[["render",_]]);export{m as default};
