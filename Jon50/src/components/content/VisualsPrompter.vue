@@ -7,6 +7,7 @@ import LyricsContainer from '../reusables/LyricsContainer.vue'
 let currentImage = ref(null)
 let currentLyrics = ref(null)
 let intervalList = []
+let index = 0
 onMounted(() => {
   VISUALS_TIMING_LIST.forEach((visuals) => {
     const { time, image, ...lyrics } = visuals
@@ -15,9 +16,13 @@ onMounted(() => {
         if (image) {
           currentImage.value = image
         }
+        if (lyrics.text) {
+          index++
+        }
         currentLyrics.value = {
           ...currentLyrics.value,
-          ...lyrics
+          ...lyrics,
+          index
         }
       }, time * 1000)
     )

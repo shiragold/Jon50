@@ -7,8 +7,8 @@ export const VISUALS_TIMING_LIST = [
     image: images[0]
   },
   {
-    time: 12.24,
-    fill: 1.6
+    time: 12.8,
+    fill: 1
   },
   {
     time: 13.8,
@@ -17,7 +17,7 @@ export const VISUALS_TIMING_LIST = [
   },
   {
     time: 13.92,
-    fill: 1.6
+    fill: 1.56
   },
   {
     time: 15.52,
@@ -35,7 +35,7 @@ export const VISUALS_TIMING_LIST = [
   },
   {
     time: 19.4,
-    fill: 1.6
+    fill: 1.8
   },
   {
     time: 22.16,
@@ -52,7 +52,7 @@ export const VISUALS_TIMING_LIST = [
     image: images[5]
   },
   {
-    time: 26.2,
+    time: 26,
     fill: 1.92
   },
   {
@@ -107,7 +107,7 @@ export const VISUALS_TIMING_LIST = [
   },
   {
     time: 51.92,
-    fill: 2.8
+    fill: 2.6
   },
   {
     time: 54.72,
@@ -134,7 +134,7 @@ export const VISUALS_TIMING_LIST = [
   },
   {
     time: 67.96,
-    fill: 2.32
+    fill: 2
   },
   {
     time: 70.28,
@@ -143,7 +143,7 @@ export const VISUALS_TIMING_LIST = [
   },
   {
     time: 71.12,
-    fill: 2
+    fill: 1.8
   },
   {
     time: 73.12,
@@ -151,8 +151,8 @@ export const VISUALS_TIMING_LIST = [
     image: images[16]
   },
   {
-    time: 74.48,
-    fill: 2
+    time: 74,
+    fill: 1.6
   },
   {
     time: 76.48,
@@ -160,8 +160,8 @@ export const VISUALS_TIMING_LIST = [
     image: images[17]
   },
   {
-    time: 77.08,
-    fill: 4
+    time: 77,
+    fill: 3.6
   },
   {
     time: 80.92,
@@ -188,7 +188,7 @@ export const VISUALS_TIMING_LIST = [
   },
   {
     time: 87.8,
-    fill: 1.84
+    fill: 1.8
   },
   {
     time: 89.64,
@@ -200,7 +200,7 @@ export const VISUALS_TIMING_LIST = [
     fill: 4
   },
   {
-    time: 93.86,
+    time: 94,
     text: 'יונתן אתה הבית',
     image: images[22]
   },
@@ -250,7 +250,7 @@ export const VISUALS_TIMING_LIST = [
     image: images[27]
   },
   {
-    time: 122.4,
+    time: 122,
     fill: 2
   },
   {
@@ -287,7 +287,7 @@ export const VISUALS_TIMING_LIST = [
   },
   {
     time: 135.8,
-    fill: 2
+    fill: 1.8
   },
   {
     time: 137.8,
@@ -314,7 +314,7 @@ export const VISUALS_TIMING_LIST = [
   },
   {
     time: 144.48,
-    fill: 4
+    fill: 3.6
   },
   {
     time: 148.48,
@@ -322,8 +322,8 @@ export const VISUALS_TIMING_LIST = [
     image: images[35]
   },
   {
-    time: 150.64,
-    fill: 3.76
+    time: 150.8,
+    fill: 3.6
   },
   {
     time: 154.4,
@@ -341,7 +341,7 @@ export const VISUALS_TIMING_LIST = [
   },
   {
     time: 161.32,
-    fill: 3
+    fill: 2.8
   },
   {
     time: 164.32,
@@ -349,8 +349,8 @@ export const VISUALS_TIMING_LIST = [
     image: images[38]
   },
   {
-    time: 166.6,
-    fill: 3
+    time: 166,
+    fill: 2.8
   },
   {
     time: 169.6,
@@ -359,7 +359,7 @@ export const VISUALS_TIMING_LIST = [
   },
   {
     time: 171.6,
-    fill: 3
+    fill: 2.4
   },
   {
     time: 174.6,
@@ -368,7 +368,7 @@ export const VISUALS_TIMING_LIST = [
   },
   {
     time: 176.88,
-    fill: 3
+    fill: 2.4
   },
   {
     time: 179.88,
@@ -377,7 +377,7 @@ export const VISUALS_TIMING_LIST = [
   },
   {
     time: 182,
-    fill: 3
+    fill: 2.8
   },
   {
     time: 185,
@@ -385,8 +385,8 @@ export const VISUALS_TIMING_LIST = [
     image: images[42]
   },
   {
-    time: 186.48,
-    fill: 4
+    time: 186,
+    fill: 3.6
   },
   {
     time: 190.48,
@@ -394,8 +394,8 @@ export const VISUALS_TIMING_LIST = [
     image: images[43]
   },
   {
-    time: 191.6,
-    fill: 3.8
+    time: 191,
+    fill: 3.6
   },
   {
     time: 195.4,

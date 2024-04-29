@@ -15,9 +15,14 @@ const router = createRouter({
       component: () => import('../views/ContentView.vue'),
       children: [
         {
+          path: 'instrumental',
+          name: 'content',
+          component: () => import('@content/InstrumentalPlayer.vue')
+        },
+        {
           path: 'acapella',
           name: 'content',
-          component: () => import('../components/content/AcapellaPlayer.vue')
+          component: () => import('@content/AcapellaPlayer.vue')
         }
       ]
     }

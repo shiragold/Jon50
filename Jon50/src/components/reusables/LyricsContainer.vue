@@ -2,6 +2,10 @@
 import { watch, ref } from 'vue'
 
 const props = defineProps({
+  index: {
+    type: Number,
+    required: true
+  },
   text: {
     type: String,
     default: ''
@@ -26,7 +30,7 @@ const stopFill = () => (fillActive.value = false)
 <template>
   <span class="lyrics-container" :class="{ fill: fillActive }">
     <Transition @before-leave="stopFill">
-      <span :key="text" class="lyrics">{{ text }}</span>
+      <span :key="index" class="lyrics">{{ text }}</span>
     </Transition>
   </span>
 </template>

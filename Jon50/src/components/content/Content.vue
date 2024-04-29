@@ -3,9 +3,7 @@ import { onMounted } from 'vue'
 import VisualsPrompter from './VisualsPrompter.vue'
 
 onMounted(() => {
-  for (const audio of document.getElementsByTagName('audio')) {
-    audio.play()
-  }
+  document.getElementsByTagName('audio')[0].play()
 })
 </script>
 
@@ -16,9 +14,6 @@ onMounted(() => {
       <h2 class="content-placeholder-title">- אתה הבית -</h2>
     </template>
   </VisualsPrompter>
-  <audio>
-    <source src="@media/instrumental.mp3" type="audio/mpeg" />
-  </audio>
   <RouterView />
 </template>
 
