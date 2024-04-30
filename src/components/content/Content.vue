@@ -21,8 +21,8 @@ import VisualsPrompter from './VisualsPrompter.vue'
   place-content: center;
   place-items: center;
   text-align: center;
-  background-color: lightskyblue;
-  color: darkslateblue;
+  background-color: var(--color-primary);
+  color: var(--color-secondary);
 
   .content-placeholder-header {
     font-size: 8rem;
