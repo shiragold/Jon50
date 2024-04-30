@@ -39,6 +39,7 @@ const store = useContentStore()
   place-items: center;
   color: var(--color-secondary);
   border-bottom: 2px var(--color-secondary) solid;
+  background-color: var(--color-light);
 
   .header-title {
     place-self: start;
