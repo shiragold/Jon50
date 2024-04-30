@@ -20,6 +20,6 @@ const store = useContentStore()
   height: calc(100vh - 2rem);
   display: grid;
   place-content: center;
-  background-color: lightskyblue;
+  background-color: var(--color-primary);
 }
 </style>
