@@ -32,8 +32,8 @@ import { NoteIcon, MicIcon } from '@icons'
   place-content: center;
   align-items: start;
   justify-items: center;
-  color: darkslateblue;
-  background-color: lightskyblue;
+  color: var(--color-secondary);
+  background-color: var(--color-primary);
 
   .home-view-header {
     grid-area: header;
