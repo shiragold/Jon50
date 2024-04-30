@@ -1,13 +1,14 @@
 :root {
   --color-primary: lightskyblue;
-  --color-dark: darkslateblue;
+  --color-secondary: darkslateblue;
+  --color-dark: darkgray;
   --color-light: white;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --color-dark: white;
-    --color-light: darkslateblue;
+    --color-light: darkgray;
   }
 }
 
