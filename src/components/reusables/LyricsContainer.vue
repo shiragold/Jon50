@@ -53,7 +53,7 @@ const stopFill = () => (fillActive.value = false)
     padding: 1rem 2rem;
     border-radius: calc(infinity * 1px);
     font-size: 4rem;
-    color: var(--color-dark);
+    color: var(--color-secondary);
   }
 
   &.fill {
