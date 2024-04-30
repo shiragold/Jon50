@@ -1,12 +1,13 @@
 <script setup>
-import { computed, onMounted } from 'vue'
+import { ref, onBeforeMount, onMounted } from 'vue'
 const props = defineProps({
   src: {
     type: String,
     required: true
   }
 })
-const srcFull = computed(() => '@media/' + props.src + '.mp3')
+let audioFile = ref(null)
+onBeforeMount(() => audioFile = import('@media/' + props.src + '.mp3'))
 
 onMounted(() => {
   document.getElementsByTagName('audio')[0].play()
@@ -14,6 +15,6 @@ onMounted(() => {
 </script>
 <template>
   <audio>
-    <source :src="srcFull" type="audio/mpeg" />
+    <source :src="audioFile" type="audio/mpeg" />
   </audio>
 </template>
