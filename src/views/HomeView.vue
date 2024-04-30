@@ -13,7 +13,7 @@ import { NoteIcon, MicIcon } from '@icons'
         <NoteIcon class="icon large" />
       </button>
     </RouterLink>
-    <RouterLink to="/content/acapella" custom v-slot="{ navigate }">
+    <RouterLink to="/content/song" custom v-slot="{ navigate }">
       <button class="home-view-play button" @click="navigate">
         <MicIcon class="icon large" />
       </button>

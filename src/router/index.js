@@ -16,13 +16,18 @@ const router = createRouter({
       children: [
         {
           path: 'tune',
-          name: 'content',
-          component: () => import('@content/InstrumentalPlayer.vue')
+          component: () => import('@content/AudioPlayer.vue'),
+          props: {
+            src: 'tune'
+          }
         },
         {
-          path: 'acapella',
+          path: 'song',
           name: 'content',
-          component: () => import('@content/AcapellaPlayer.vue')
+          component: () => import('@content/AudioPlayer.vue'),
+          props: {
+            src: 'song'
+          }
         }
       ]
     }

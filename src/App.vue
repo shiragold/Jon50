@@ -5,7 +5,7 @@ import { useContentStore } from '@/stores/content'
 import { HomeIcon, RestartIcon } from '@icons'
 
 const route = useRoute()
-const isContent = computed(() => route.name === 'content')
+const isContent = computed(() => route.path.includes('content'))
 
 const store = useContentStore()
 </script>

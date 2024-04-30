@@ -1,10 +1,5 @@
 <script setup>
-import { onMounted } from 'vue'
 import VisualsPrompter from './VisualsPrompter.vue'
-
-onMounted(() => {
-  document.getElementsByTagName('audio')[0].play()
-})
 </script>
 
 <template>
