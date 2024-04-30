@@ -1,5 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '@views/HomeView.vue'
+import { tune, song } from '@media'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -18,7 +19,7 @@ const router = createRouter({
           path: 'tune',
           component: () => import('@content/AudioPlayer.vue'),
           props: {
-            src: 'tune'
+            src: tune
           }
         },
         {
@@ -26,7 +27,7 @@ const router = createRouter({
           name: 'content',
           component: () => import('@content/AudioPlayer.vue'),
           props: {
-            src: 'song'
+            src: song
           }
         }
       ]
