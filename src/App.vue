@@ -37,8 +37,8 @@ const store = useContentStore()
   display: grid;
   grid-template-columns: auto 4rem;
   place-items: center;
-  color: darkslateblue;
-  border-bottom: 2px darkslateblue solid;
+  color: var(--color-secondary);
+  border-bottom: 2px var(--color-secondary) solid;
 
   .header-title {
     place-self: start;
