@@ -8,7 +8,7 @@ import { NoteIcon, MicIcon } from '@icons'
     <h3 class="home-view-title">
       Thrilled to celebrate with you!<br />Wishing all the best...<br />to another exciting decade!
     </h3>
-    <RouterLink to="/content/instrumental" custom v-slot="{ navigate }">
+    <RouterLink to="/content/tune" custom v-slot="{ navigate }">
       <button class="home-view-play button" @click="navigate">
         <NoteIcon class="icon large" />
       </button>

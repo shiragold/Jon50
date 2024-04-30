@@ -13,7 +13,8 @@ export default defineConfig({
       '@media': fileURLToPath(new URL('./src/assets/media', import.meta.url)),
       '@images': fileURLToPath(new URL('./src/assets/images', import.meta.url)),
       '@icons': fileURLToPath(new URL('./src/components/reusables/icons', import.meta.url)),
-      '@content': fileURLToPath(new URL('./src/components/content', import.meta.url))
+      '@content': fileURLToPath(new URL('./src/components/content', import.meta.url)),
+      '@views': fileURLToPath(new URL('./src/views', import.meta.url))
     }
   },
   base: '/Jon50/'

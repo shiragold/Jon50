@@ -1,5 +1,5 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import HomeView from '../views/HomeView.vue'
+import HomeView from '@views/HomeView.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -12,10 +12,10 @@ const router = createRouter({
     {
       path: '/content',
       name: 'content',
-      component: () => import('../views/ContentView.vue'),
+      component: () => import('@views/ContentView.vue'),
       children: [
         {
-          path: 'instrumental',
+          path: 'tune',
           name: 'content',
           component: () => import('@content/InstrumentalPlayer.vue')
         },
